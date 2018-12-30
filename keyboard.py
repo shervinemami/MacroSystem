@@ -38,6 +38,7 @@ if 'semicolon' not in typeables:
     typeables["semicolon"] = keyboard.get_typeable(char=';')
 
 
+#  Note that this doesn't include the less common keys such as the "window" key.
 release = Key("shift:up, ctrl:up, alt:up")
 
 
@@ -57,30 +58,35 @@ def cancel_and_sleep(text=None, text2=None):
 
 # For repeating of characters.
 specialCharMap = {
-    "(bar|vertical bar|pipe)": "|",
-    "(dash|minus|hyphen)": "-",
-    "dit": ".",
+    "pipe": "|",
+    "minus": "-",
+    "dot": ".",
     "comma": ",",
     "backslash": "\\",
     "underscore": "_",
-    "(star|asterisk)": "*",
+    "star": "*",
     "colon": ":",
     "(semicolon|semi-colon)": ";",
-    "at": "@",
-    "[double] quote": '"',
+    "at symbol": "@",
+    #"[double] quote": '"',
+    "quotes": '"',
     "single quote": "'",
+    "apostrophe": "'",
     "hash": "#",
     "dollar": "$",
     "percent": "%",
     "ampersand": "&",
     "slash": "/",
-    "equal": "=",
+    "equals": "=",
     "plus": "+",
     "space": " ",
-
-    "bang": "!",
+    "exclamation": "!",		# "bang" sounds like "aim" that I might use for "a"
+	#"bang": "!",
     "question": "?",
     "caret": "^",
+	"tilde": "~",
+	"back tick": "`",
+	
     # some other symbols I haven't imported yet, lazy sorry
     # 'ampersand': Key('ampersand'),
     # 'apostrophe': Key('apostrophe'),
@@ -128,38 +134,39 @@ singleModifierMap = {
 }
 
 letterMap = {
-    "(alpha|arch)": "a",
-    "(bravo|brav) ": "b",
-    "(charlie|turley|char) ": "c",
-    "(delta|del) ": "d",
-    "(echo|eck) ": "e",
-    "(foxtrot|fox) ": "f",
-    "(golf|gang) ": "g",
-    "(hotel) ": "h",
-    "(india|indigo|ish) ": "i",
-    "(juliet|julia) ": "j",
-    "(kilo) ": "k",
-    "(lima|lion|line|lie) ": "l",
-    "(mike) ": "m",
-    "(november|noy) ": "n",
-    "(Oscar|osh) ": "o",
-    "(papa|poppa|pom) ": "p",
-    "(quebec|quiche|queen) ": "q",
-    "(romeo|ree) ": "r",
-    "(sierra|soy) ": "s",
-    "(tango|tay) ": "t",
-    "(uniform|umm) ": "u",
-    "(victor|van) ": "v",
-    "(whiskey|wes) ": "w",
+    "(as) ": "a",                                   #"(aim|and) ": "a",		# careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
+    "(best) ": "b",        #  "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
+    "(see) ": "c",
+    "(dim) ": "d",		# My "dim" is a bit like "ding". My "dug" is a bit like dot. # My "des" sometimes gets picked up as "this". My "desk" sometimes gets picked up as "verse", and sometimes "dose", "this".
+    "(echo) ": "e",		# careful of x, f
+    "(fox|false) ": "f",		# My "fox" is like "false" # careful of F1, F2 ...
+    "(gang) ": "g",             # My "gang" is like "can"
+    "(hotel) ": "h",		# careful of 8
+    "(it's) ": "i",
+    "(julia) ": "j",
+    "(kilo|killer) ": "k",		# careful of equal.  My "kilo" sometimes gets picked up as "killer"
+    "(lima) ": "l",	  # my L sometimes gets picked up as "help". "L" is like Dragon keyword "spell" :-(
+    "(mix) ": "m",       # Mix is a bit like minus?  # My "mike" is similar to "my"
+    "(noy) ": "n",          # nook?
+    "(osh|wash) ": "o",     # ox?
+    "(pom) ": "p",     # My "pom" is like "upon"
+    "(queen|clean) ": "q",
+    "(rod) ": "r",
+    "(soy) ": "s",
+    "(tay) ": "t",
+    "(you) ": "u",
+    "(video) ": "v",     # My "vix" is like "mix". My "vax" is like "backspace". My "van" is a bit like "then"
+    "(wes|worse) ": "w",
     "(x-ray) ": "x",
-    "(yankee|yaa) ": "y",
-    "(zulu) ": "z",
+    "(why) ": "y",      # My "why" is like "white" that is like "why tay"
+    "(zed|said|set) ": "z",
 }
 
 # generate uppercase versions of every letter
 upperLetterMap = {}
 for letter in letterMap:
-    upperLetterMap["(upper|sky) " + letter] = letterMap[letter].upper()
+    upperLetterMap["capital " + letter] = letterMap[letter].upper()     # My "cap" is too much like "up"
+    #upperLetterMap["sky " + letter] = letterMap[letter].upper()         # My "sky" is too much like Dragon keyword "score" :-(
 letterMap.update(upperLetterMap)
 
 numberMap = {
@@ -175,6 +182,7 @@ numberMap = {
     "nine": "9",
 }
 
+# WHAT IS THIS SECTION FOR? IT DOESN'T SEEM TO HAVE ANY EFFECT!
 controlKeyMap = {
     "left": "left",
     "right": "right",
@@ -185,14 +193,14 @@ controlKeyMap = {
     "home": "home",
     "end": "end",
     "space": "space",
-    "(enter|return)": "enter",
+    "(enter)": "enter",
     "escape": "escape",
     "tab": "tab",
     "backspace": "backspace"
 }
 
 # F1 to F12. (do these actually work?)
-functionKeyMap = {
+NOT_USED_functionKeyMap = {
     'F one': 'f1',
     'F two': 'f2',
     'F three': 'f3',
@@ -211,7 +219,7 @@ pressKeyMap = {}
 pressKeyMap.update(letterMap)
 pressKeyMap.update(numberMap)
 pressKeyMap.update(controlKeyMap)
-pressKeyMap.update(functionKeyMap)
+#pressKeyMap.update(functionKeyMap)
 
 
 def handle_word(text):
@@ -236,102 +244,178 @@ grammarCfg.cmd.map = Item(
         "right [<n>]": Key("right:%(n)d"),
         "page up [<n>]": Key("pgup:%(n)d"),
         "page down [<n>]": Key("pgdown:%(n)d"),
+        "jump [<n>]": Key("pgup:%(n)d"),
+        "drop [<n>]": Key("pgdown:%(n)d"),
         #"up <n> (page|pages)": Key("pgup:%(n)d"),
         #"down <n> (page|pages)": Key("pgdown:%(n)d"),
         #"left <n> (word|words)": Key("c-left/3:%(n)d/10"),
         #"right <n> (word|words)": Key("c-right/3:%(n)d/10"),
         "home": Key("home"),
         "end": Key("end"),
-        "doc home": Key("c-home/3"),
-        "doc end": Key("c-end/3"),
+		"insert": Key("insert"),
+		# Other special keys that could be nice to have, but might not be supported so far:
+			#Caps_Lock
+			#Alt_R
+			#KP_Insert
+			#Redo
+			#XF86AudioPlay
+			#XF86AudioNext
+			#XF86AudioForward
+			#XF86AudioPause
+			#XF86AudioRaiseVolume
+			#XF86AudioLowerVolume
+			#XF86Back
+			#KP_Next
+			#Scroll_Lock
+			#XF86MonBrightnessUp
+			#XF86MonBrightnessDown
+			#XF86ScrollUp
+			#XF86ScrollDown
+			#Insert
+			#Next
+			#XF86Next
+			#XF86AudioMute
+			#f1 ... f24
+			#Print
+			#Pause
+        #"doc home": Key("c-home/3"),
+        #"doc end": Key("c-end/3"),
         # Functional keys.
         "space": release + Key("space"),
         "space [<n>]": release + Key("space:%(n)d"),
-        "(enter|slap|slop) [<n>]": release + Key("enter:%(n)d"),
+        "(enter) [<n>]": release + Key("enter:%(n)d"),
         "tab [<n>]": Key("tab:%(n)d"),
-        ###"delete [<n>]": Key("del/3:%(n)d"),
-        "delete [this] line": Key("home, s-end, del"),  # @IgnorePep8
+        "delete this line": Key("home, s-end, del"),  # @IgnorePep8
         "backspace [<n>]": release + Key("backspace:%(n)d"),
         "application key": release + Key("apps/3"),
-        "win key": release + Key("win/3"),
         #"paste [that]": Function(paste_command),
         #"copy [that]": Function(copy_command),
-        "cut [that]": release + Key("c-x/3"),
-        "select all": release + Key("c-a/3"),
-        "[(hold|press)] alt": Key("alt:down/3"),
-        "release alt": Key("alt:up"),
-        "[(hold|press)] shift": Key("shift:down/3"),
+        #"cut [that]": release + Key("c-x/3"),
+        #"select all": release + Key("c-a/3"),
+        #"[(hold|press)] met": Key("alt:down/3"),
+
+        # Function keys. For some reason the functionKeyMap above isn't working for me.
+        'F one': Key('f1'),
+        'F two': Key('f2'),
+        'F three': Key('f3'),
+        'F four': Key('f4'),
+        'F five': Key('f5'),
+        'F six': Key('f6'),
+        'F seven': Key('f7'),
+        'F eight': Key('f8'),
+        'F nine': Key('f9'),
+        'F ten': Key('f10'),
+        'F eleven': Key('f11'),
+        'F twelve': Key('f12'),
+
+        #"win key": release + Key("win/3"),
+        #"window <char>": Key("win:down/3") + Text("%(char)s") + Key("win:up"),
+        "window run": Key("win:down/3") + Text("r") + Key("win:up"),
+        "release window": Key("win:up"),
+        #"window [<num>]": Key("win:down/3") + Text("%(num)d") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "window 1": Key("win:down/3") + Text("1") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "window 2": Key("win:down/3") + Text("2") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "window 3": Key("win:down/3") + Text("3") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "window 4": Key("win:down/3") + Text("4") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        #"meta [<num>]": Key("alt:down/3") + Text("%(num)d") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		"meta": Key("alt:down/3"),    # Or do I prefer "alter"?
+		"meta 1": Key("alt:down/3") + Text("1") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		"meta 2": Key("alt:down/3") + Text("2") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		"meta 3": Key("alt:down/3") + Text("3") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		"meta 4": Key("alt:down/3") + Text("4") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		#"meta 5": Key("alt:down/3") + Text("5") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		#"meta 6": Key("alt:down/3") + Text("6") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		#"meta 7": Key("alt:down/3") + Text("7") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		#"meta 8": Key("alt:down/3") + Text("8") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		"meta 9": Key("alt:down/3") + Text("9") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+        #"hold met": Key("alt:down/3"),
+        #"release met": Key("alt:up"),
+        "shift": Key("shift:down/3"),
+        "hold shift": Key("shift:down"),
         "release shift": Key("shift:up"),
-        "[(hold|press)] control": Key("ctrl:down/3"),
+        "control": Key("ctrl:down/3"),
+        "hold control": Key("ctrl:down"),
         "release control": Key("ctrl:up"),
-        "release [all]": release,
+        "release all": release,
         "press key <pressKey>": Key("%(pressKey)s"),
+
+        # Try to override some Dragon commands that we might say:
+        "score": Text("?"),
+		'undo': Key('c-z'),  # My "undo" sounds too much like "end"?
+
         # Closures.
-        "angle brackets": Key("langle, rangle, left/3"),
-        "[square] brackets": Key("lbracket, rbracket, left/3"),
-        "[curly] braces": Key("lbrace, rbrace, left/3"),
-        "(parens|parentheses)": Key("lparen, rparen, left/3"),
-        "quotes": Key("dquote/3, dquote/3, left/3"),
-        "backticks": Key("backtick:2, left"),
-        "single quotes": Key("squote, squote, left/3"),
+        #"angle brackets": Key("langle, rangle, left/3"),
+        #"[square] brackets": Key("lbracket, rbracket, left/3"),
+        #"[curly] braces": Key("lbrace, rbrace, left/3"),
+        #"(parens|parentheses)": Key("lparen, rparen, left/3"),
+        #"quotes": Key("dquote/3, dquote/3, left/3"),
+        #"backticks": Key("backtick:2, left"),
+        #"single quotes": Key("squote, squote, left/3"),
         # Shorthand multiple characters.
         "double <char>": Text("%(char)s%(char)s"),
         "triple <char>": Text("%(char)s%(char)s%(char)s"),
-        "double escape": Key("escape, escape"),  # Exiting menus.
+        #"double escape": Key("escape, escape"),  # Exiting menus.
         # Punctuation and separation characters, for quick editing.
-        "colon [<n>]": Key("colon/2:%(n)d"),
-        "semi-colon [<n>]": Key("semicolon/2:%(n)d"),
-        "comma [<n>]": Key("comma/2:%(n)d"),
-        "(dot|period|dit|point)": Key("dot"),  # cannot be followed by a repeat count
-        "(dash|hyphen|minus) [<n>]": Key("hyphen/2:%(n)d"),
-        "underscore [<n>]": Key("underscore/2:%(n)d"),
+        "colon": Key("colon"),
+        "semi-colon": Key("semicolon"),
+        "comma": Key("comma"),
+        "dot": Key("dot"),  # cannot be followed by a repeat count
+        "full stop": Key("dot"),  # cannot be followed by a repeat count
+        "point <n> [<num>]": Key("dot") + Text("%(n)d") + Text("%(num)d"),  # allow to say "number 1.23"
+        "(dash|minus)": Key("hyphen"),
+        "underscore": Key("underscore"),
+
+        # These are needed by this grammar, otherwise many of these rules won't work!
         "<letters>": Text("%(letters)s"),
         "<char>": Text("%(char)s"),
 
-        'langle [<n>]': Key('langle:%(n)d'),
-        'lace [<n>]':   Key('lbrace:%(n)d'),
-        '(lack|lair) [<n>]':   Key('lbracket:%(n)d'),
-        #'(laip|len) [<n>]':   Key('lparen:%(n)d'),
-        'len [<n>]':    Key('lparen:%(n)d'),
-        'rangle [<n>]': Key('rangle:%(n)d'),
-        'race [<n>]':   Key('rbrace:%(n)d'),
-        '(rack|rare) [<n>]':   Key('rbracket:%(n)d'),
-        #'(raip|ren|wren) [<n>]':   Key('rparen:%(n)d'),
+        'less than [<n>]': Key('langle:%(n)d'),     # angle bracket
+		#'langle [<n>]': Key('langle:%(n)d'),
+        'lurly [<n>]':   Key('lbrace:%(n)d'),       # curly brace
+        'lair [<n>]':   Key('lbracket:%(n)d'),      # square bracket
+        'len [<n>]':    Key('lparen:%(n)d'),        # round parenthesis
+        'greater than [<n>]': Key('rangle:%(n)d'),
+		#'rangle [<n>]': Key('rangle:%(n)d'),
+        'rurly [<n>]':   Key('rbrace:%(n)d'),
+        'rare [<n>]':   Key('rbracket:%(n)d'),
         '(ren|wren) [<n>]':   Key('rparen:%(n)d'),
 
-        "act [<n>]": Key("escape:%(n)d"),
-        "calm [<n>]": Key("comma:%(n)d"),
-        'into': Key('space,bar,space'),
-        'care':        Key('home'),
-        '(doll|dole)': Key('end'),
-        'chuck [<n>]':       Key('del:%(n)d'),
-        'scratch [<n>]':     Key('backspace:%(n)d'),
-        "visual": Key("v"),
-        "visual line": Key("s-v"),
-        "visual block": Key("c-v"),
-        "doc save": Key("c-s"),
-        "arrow": Text("->"),
+        "escape [<n>]": Key("escape:%(n)d"),
 
-        'gope [<n>]':  Key('pgup:%(n)d'),
-        'drop [<n>]':  Key('pgdown:%(n)d'),
 
-        'lope [<n>]':  Key('c-left:%(n)d'),
-        '(yope|rope) [<n>]':  Key('c-right:%(n)d'),
-        '(hill scratch|hatch) [<n>]': Key('c-backspace:%(n)d'),
+        'delete [<n>]':       Key('del:%(n)d'),
+		#'chuck [<n>]':       Key('del:%(n)d'),
+        #'scratch [<n>]':     Key('backspace:%(n)d'),
+		
+        #"visual": Key("v"),
+        #"visual line": Key("s-v"),
+        #"visual block": Key("c-v"),
+        #"doc save": Key("c-s"),
+        #"(arrow|pointer)": Text("->"),
 
-        'hexadecimal': Text("0x"),
-        'suspend': Key('c-z'),
+        #'fly [<n>]':  Key('pgup:%(n)d'),
+        #'drop [<n>]':  Key('pgdown:%(n)d'),
+
+        #'lope [<n>]':  Key('c-left:%(n)d'),
+        #'(yope|rope) [<n>]':  Key('c-right:%(n)d'),
+        #'(hill scratch|hatch) [<n>]': Key('c-backspace:%(n)d'),
+
+        #'hexadecimal': Text("0x"),
+        #'suspend': Key('c-z'),
+		#'undo': Key('c-z'),  # Sounds too much like "end"
+		'geez': Key('c-z'),
 
         'word <text>': Function(handle_word),
         'number <num>': Text("%(num)d"),
         'change <text> to <text2>': Key("home, slash") + Text("%(text)s") + Key("enter, c, e") + Text("%(text2)s") + Key("escape"),
 
         # Text corrections.
-        "(add|fix) missing space": Key("c-left/3, space, c-right/3"),
-        "(delete|remove) (double|extra) (space|whitespace)": Key("c-left/3, backspace, c-right/3"),  # @IgnorePep8
-        "(delete|remove) (double|extra) (type|char|character)": Key("c-left/3, del, c-right/3"),  # @IgnorePep8
+        "again": Key("ctrl:down/3, shift:down/3, left") + Key("ctrl:up, shift:up"), # Type over a word
+        "fix missing space": Key("c-left/3, space, c-right/3"),
+        "remove extra space": Key("c-left/3, backspace, c-right/3"),  # @IgnorePep8
+        "remove extra character": Key("c-left/3, del, c-right/3"),  # @IgnorePep8
         # Microphone sleep/cancel started dictation.
-        "[<text>] (go to sleep|cancel and sleep) [<text2>]": Function(cancel_and_sleep),  # @IgnorePep8
+        #"[<text>] (go to sleep|cancel and sleep) [<text2>]": Function(cancel_and_sleep),  # @IgnorePep8
     },
     namespace={
         "Key": Key,
