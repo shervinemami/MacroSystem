@@ -133,8 +133,8 @@ singleModifierMap = {
     "super": "win",
 }
 
-
-letterMap = {
+oklmnolmnoklmnolopjklmlmnopmnopmnopqnopqnq
+nopqrletterMap = {
     "(as) ": "a",                                   #"(aim|and) ": "a",		# careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
     "(black) ": "b",        #  "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
     "(see) ": "c",
@@ -152,7 +152,7 @@ letterMap = {
     "(orange) ": "o",     # My oryx is like "echo".  My "osh" is like "as". My "omar" is like "home up"
     "(pingu) ": "p",     # My "pom" is like "upon" and "up home"
     "(queen|clean) ": "q",
-    "(rod) ": "r",
+    "(rode) ": "r",          # My "rod" is like "right"
     "(size) ": "s",
     "(teach) ": "t",
     "(unix) ": "u",          # "urge"?
