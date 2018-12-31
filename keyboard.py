@@ -253,7 +253,7 @@ grammarCfg.cmd.map = Item(
         "home": Key("home"),
         "end": Key("end"),
 		"insert": Key("insert"),
-		"caps lock": Key("Caps_jklLock"),
+		"caps lock": Key("Caps_Lock"),
 		# Other special keys that could be nice to have, but might not be supported so far:
 			#Caps_Lock
 			#Alt_R
