@@ -92,11 +92,11 @@ class ProgramsRule(MappingRule):
         "find": Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, f") + Key("ctrl:up, win:up, alt:up, shift:up"),
 
         # Some custom shortcuts to open my fav applications. Use autohotkey to switch to these programs when needed.
-        "go to Firefox": Key("ctrl:down/3, win:down/3, alt:down/3, f") + Key("ctrl:up, win:up, alt:up"),
-        "go to console": Key("ctrl:down/3, win:down/3, alt:down/3, c") + Key("ctrl:up, win:up, alt:up"),
-        "go to text":    Key("ctrl:down/3, win:down/3, alt:down/3, t") + Key("ctrl:up, win:up, alt:up"),
-        "go to sublime": Key("ctrl:down/3, win:down/3, alt:down/3, s") + Key("ctrl:up, win:up, alt:up"),
-        "go to dolphin": Key("ctrl:down/3, win:down/3, alt:down/3, d") + Key("ctrl:up, win:up, alt:up"),
+        "switch to Firefox": Key("ctrl:down/3, win:down/3, alt:down/3, f") + Key("ctrl:up, win:up, alt:up"),
+        "switch to console": Key("ctrl:down/3, win:down/3, alt:down/3, c") + Key("ctrl:up, win:up, alt:up"),
+        "switch to text":    Key("ctrl:down/3, win:down/3, alt:down/3, t") + Key("ctrl:up, win:up, alt:up"),
+        "switch to sublime": Key("ctrl:down/3, win:down/3, alt:down/3, s") + Key("ctrl:up, win:up, alt:up"),
+        "switch to dolphin": Key("ctrl:down/3, win:down/3, alt:down/3, d") + Key("ctrl:up, win:up, alt:up"),
 
         "perforce": Text("p4"),
     }
