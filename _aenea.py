@@ -135,7 +135,26 @@ def reload_code():
         print "finished reloading"
 
 
+def dummy():
+    print "SHERV In my dummy() function"
 
+class DisableKeyboard(dragonfly.CompoundRule):
+    spec = command_table['disable keyboard']
+
+    def _process_recognition(self, node, extras):
+        print "SHERV In DisableKeyboard()"
+        #server_list = dragonfly.DictList('aenea servers')
+        #print server_list
+        #mapping = {command_table['disable keyboard']: dragonfly.Function(dummy)}
+
+class EnableKeyboard(dragonfly.CompoundRule):
+    spec = command_table['enable keyboard']
+
+    def _process_recognition(self, node, extras):
+        print "SHERV In EnableKeyboard()"
+        #server_list = dragonfly.DictList('aenea servers')
+        #print server_list
+        #mapping = {command_table['enable keyboard']: dragonfly.Function(dummy)}
 
 
 # Note that you do not need to turn mic off and then on after saying this.  This
