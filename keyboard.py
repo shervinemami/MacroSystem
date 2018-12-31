@@ -133,7 +133,7 @@ singleModifierMap = {
     "super": "win",
 }
 
-abcgabcdefcdefghfghfgfghighijghijkijkd
+
 letterMap = {
     "(as) ": "a",                                   #"(aim|and) ": "a",		# careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
     "(black) ": "b",        #  "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
