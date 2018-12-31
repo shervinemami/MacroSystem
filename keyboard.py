@@ -149,7 +149,7 @@ letterMap = {
     "(lazy) ": "l",	  # My "lima" is like "clean" and "end". My L sometimes gets picked up as "help". "L" is like Dragon keyword "spell" :-(
     "(most) ": "m",       # Mix is a bit like minus?  # My "mike" is similar to "my"
     "(niche) ": "n",          # nook?  "Nippy" is like "up"
-    "(oox) ": "o",     # ox?  My "osh" is like "as". My "omar" is like "home up"
+    "(oryx) ": "o",     # ox?  My "osh" is like "as". My "omar" is like "home up"
     "(pingu) ": "p",     # My "pom" is like "upon" and "up home"
     "(queen|clean) ": "q",
     "(rod) ": "r",
