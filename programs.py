@@ -85,7 +85,7 @@ class ProgramsRule(MappingRule):
         #'maximize window': Key('a-f10'),
         #'minimize window': Key('a-f9'),
 
-        # Some custom shortcuts to open my fav applications. Use autohotkey to switch to these programs when needed.
+        # Some custom shortcuts to open my fav applications. Use Linux AutoKey to switch to these programs when needed.
         "go to Firefox": Key("ctrl:down/3, win:down/3, alt:down/3, f") + Key("ctrl:up, win:up, alt:up"),
         "go to console": Key("ctrl:down/3, win:down/3, alt:down/3, c") + Key("ctrl:up, win:up, alt:up"),
         "go to text":    Key("ctrl:down/3, win:down/3, alt:down/3, t") + Key("ctrl:up, win:up, alt:up"),
@@ -98,7 +98,7 @@ class ProgramsRule(MappingRule):
         "go tab right":  Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r") + Key("ctrl:up, win:up, alt:up, shift:up"),
         "close tab":     Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, c") + Key("ctrl:up, win:up, alt:up, shift:up"),
 
-        # My current aenea proxy system isn't allowing to hold down shift or caps lock
+        # My current aenea proxy system isn't allowing to hold down shift or caps lock, so try using Linux AutoKey instead
         "caps lock":     Key("ctrl:down/3, win:down/3, alt:down/3, z") + Key("ctrl:up, win:up, alt:up"),
 
         # Konsole shortcuts
