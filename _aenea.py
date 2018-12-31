@@ -50,13 +50,6 @@ print '\tUSE_MULTIPLE_ACTIONS:', aenea.config.USE_MULTIPLE_ACTIONS
 print '\tSCREEN_RESOLUTION:', aenea.config.SCREEN_RESOLUTION
 
 try:
-    import pkg_resources
-    dragonfly_dist = pkg_resources.get_distribution("dragonfly")
-    print "Current Dragonfly version:", dragonfly_dist.version
-except ImportError:
-    pass
-
-try:
     aenea.proxy_contexts._get_context()
     print 'Aenea: Successfully connected to server.'
 except:
