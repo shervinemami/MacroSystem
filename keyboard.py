@@ -155,7 +155,7 @@ letterMap = {
     "(rod) ": "r",
     "(size) ": "s",
     "(teach) ": "t",
-    "(urge) ": "u",
+    "(unicorn) ": "u",          # "urge"?
     "(video) ": "v",            # My "vix" is like "mix". My "vax" is like "backspace". My "van" is a bit like "then"
     "(wes) ": "w",              # My "wes" is like "worse"
     "(x-ray) ": "x",
