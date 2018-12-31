@@ -135,31 +135,31 @@ singleModifierMap = {
 
 letterMap = {
     "(as) ": "a",                                   #"(aim|and) ": "a",		# careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
-    "(best) ": "b",        #  "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
+    "(black) ": "b",        #  "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
     "(see) ": "c",
     "(dim) ": "d",		# My "dim" is a bit like "ding". My "dug" is a bit like dot. # My "des" sometimes gets picked up as "this". My "desk" sometimes gets picked up as "verse", and sometimes "dose", "this".
     "(echo) ": "e",		# careful of x, f
     "(fox|false) ": "f",		# My "fox" is like "false" # careful of F1, F2 ...
-    "(gang) ": "g",             # My "gang" is like "can"
+    "(goof) ": "g",             # My "gang" is like "can"
     "(hotel) ": "h",		# careful of 8
-    "(it's) ": "i",
+    "(itchy) ": "i",
     "(julia) ": "j",
-    "(kilo|killer) ": "k",		# careful of equal.  My "kilo" sometimes gets picked up as "killer"
+    "(koop) ": "k",		# careful of equal.  My "kilo" sometimes gets picked up as "killer"
     "(lima) ": "l",	  # my L sometimes gets picked up as "help". "L" is like Dragon keyword "spell" :-(
-    "(mix) ": "m",       # Mix is a bit like minus?  # My "mike" is similar to "my"
+    "(mork) ": "m",       # Mix is a bit like minus?  # My "mike" is similar to "my"
     "(noy) ": "n",          # nook?
     "(osh|wash) ": "o",     # ox?
     "(pom) ": "p",     # My "pom" is like "upon"
     "(queen|clean) ": "q",
     "(rod) ": "r",
-    "(soy) ": "s",
-    "(tay|test) ": "t",
-    "(you) ": "u",
-    "(video) ": "v",     # My "vix" is like "mix". My "vax" is like "backspace". My "van" is a bit like "then"
+    "(stuck) ": "s",
+    "(teach) ": "t",
+    "(urge) ": "u",
+    "(video) ": "v",            # My "vix" is like "mix". My "vax" is like "backspace". My "van" is a bit like "then"
     "(wes|worse) ": "w",
     "(x-ray) ": "x",
-    "(why) ": "y",      # My "why" is like "white" that is like "why tay"
-    "(zed|said|set) ": "z",
+    "(yang) ": "y",             # My "why" is like "white" that is like "why tay"
+    "(zed|said) ": "z",     # My "zed" is like "said" and "set"
 }
 
 # generate uppercase versions of every letter
