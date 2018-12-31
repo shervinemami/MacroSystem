@@ -341,7 +341,6 @@ grammarCfg.cmd.map = Item(
 
         # Try to override some Dragon commands that we might say:
         "score": Text("?"),
-		'undo': Key('c-z'),  # My "undo" sounds too much like "end"?
 
         # Closures.
         #"angle brackets": Key("langle, rangle, left/3"),
