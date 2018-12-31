@@ -146,7 +146,7 @@ def reload_code():
 def shervstest():
     print "Running Shervs Test!"
     from six.moves import xmlrpc_client
-    server = xmlrpc_client.ServerProxy("http://127.0.0.1:12400", allow_none=True)
+    server = xmlrpc_client.ServerProxy("http://127.0.0.1:12400", allow_none=False)
     remote_title = server.GetActiveWindowTitle()
     print "Remote ", remote_title
 
