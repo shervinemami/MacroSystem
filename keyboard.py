@@ -138,7 +138,7 @@ letterMap = {
     "(as) ": "a",                                   #"(aim|and) ": "a",		# careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
     "(black) ": "b",        #  "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
     "(see) ": "c",
-    "(dam) ": "d",		# My "dim" is a bit like "ding". My "dug" is a bit like dot. # My "des" sometimes gets picked up as "this". My "desk" sometimes gets picked up as "verse", and sometimes "dose", "this".
+    "(drax) ": "d",		# My "dam" is like down. My "dim" is a bit like "ding". My "dug" is a bit like dot. # My "des" sometimes gets picked up as "this". My "desk" sometimes gets picked up as "verse", and sometimes "dose", "this".
     "(echo) ": "e",		# careful of x, f
     "(fox|false) ": "f",		# My "fox" is like "false" # careful of F1, F2 ...
     "(golf) ": "g",             # My "gang" is like "can"
