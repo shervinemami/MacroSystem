@@ -102,7 +102,7 @@ class ProgramsRule(MappingRule):
         "caps lock":     Key("ctrl:down/3, win:down/3, alt:down/3, z") + Key("ctrl:up, win:up, alt:up"),
 
         # Konsole shortcuts
-        "search": Key("c-r"),   # Ctrl+R
+        "search": Key("c-r"),   # Ctrcl+R
         #"find": Key("ctrl:down/3, shift:down/3, f") + Key("ctrl:up, shift:up"),   # Ctrl+Shift+F
 
         "perforce": Text("p4"),
