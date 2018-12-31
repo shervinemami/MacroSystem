@@ -146,7 +146,7 @@ letterMap = {
     "(itchy) ": "i",
     "(julia) ": "j",
     "(koop) ": "k",		# careful of equal.  My "kilo" sometimes gets picked up as "killer"
-    "(loud) ": "l",	  # My "lima" is like "clean" and "end". My L sometimes gets picked up as "help". "L" is like Dragon keyword "spell" :-(
+    "(lazy) ": "l",	  # My "lima" is like "clean" and "end". My L sometimes gets picked up as "help". "L" is like Dragon keyword "spell" :-(
     "(mork) ": "m",       # Mix is a bit like minus?  # My "mike" is similar to "my"
     "(noy) ": "n",          # nook?
     "(osh|wash) ": "o",     # ox?
