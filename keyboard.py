@@ -279,6 +279,9 @@ grammarCfg.cmd.map = Item(
 		"meta 9": Key("alt:down/3") + Text("9") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
         #"hold met": Key("alt:down/3"),
         #"release met": Key("alt:up"),
+
+        # My current aenea proxy system isn't allowing to hold down shift or caps lock, so I'm using Linux AutoKey instead. See "programs.py"
+
         "shift": Key("shift:down/3"),
         #"hold shift": Key("shift:down"),
         #"release shift": Key("shift:up"),
