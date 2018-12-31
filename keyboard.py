@@ -152,7 +152,7 @@ nopqrletterMap = {
     "(orange) ": "o",     # My oryx is like "echo".  My "osh" is like "as". My "omar" is like "home up"
     "(pingu) ": "p",     # My "pom" is like "upon" and "up home"
     "(queen|clean) ": "q",
-    "(rode) ": "r",          # My "rod" is like "right"
+    "(rolex) ": "r",          # My "rod" is like "right"
     "(size) ": "s",
     "(teach) ": "t",
     "(unix) ": "u",          # "urge"?
