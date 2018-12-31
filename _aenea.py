@@ -62,8 +62,8 @@ command_table = [
     'disable proxy server',
     'enable proxy server',
     'force natlink to reload all grammars',
-#    'disable keyboard',
-#    'enable keyboard',
+    'disable keyboard',
+    'enable keyboard',
     ]
 command_table = aenea.configuration.make_grammar_commands(
     'aenea',
@@ -135,17 +135,26 @@ def reload_code():
         print "finished reloading"
 
 
-#def dummy():
-#    print "SHERV In my dummy() function"
+def dummy():
+    print "SHERV In my dummy() function"
 
-#class DisableKeyboard(dragonfly.MappingRule):
-#    print "SHERV In DisableKeyboard()"
+class DisableKeyboard(dragonfly.CompoundRule):
+    spec = command_table['disable keyboard']
 
-#class EnableKeyboard(dragonfly.MappingRule):
-#    print "SHERV In EnableKeyboard()"
-#    #server_list = dragonfly.DictList('aenea servers')
-#    #print server_list
-#    #mapping = {command_table['enable keyboard']: dragonfly.Function(dummy)}
+    def _process_recognition(self, node, extras):
+        print "SHERV In DisableKeyboard()"
+        #server_list = dragonfly.DictList('aenea servers')
+        #print server_list
+        #mapping = {command_table['disable keyboard']: dragonfly.Function(dummy)}
+
+class EnableKeyboard(dragonfly.CompoundRule):
+    spec = command_table['enable keyboard']
+
+    def _process_recognition(self, node, extras):
+        print "SHERV In EnableKeyboard()"
+        #server_list = dragonfly.DictList('aenea servers')
+        #print server_list
+        #mapping = {command_table['enable keyboard']: dragonfly.Function(dummy)}
 
 
 
@@ -179,8 +188,8 @@ grammar.add_rule(EnableRule())
 grammar.add_rule(DisableRule())
 grammar.add_rule(ReloadGrammarsRule())
 grammar.add_rule(ChangeServer())
-#grammar.add_rule(DisableKeyboard())
-#grammar.add_rule(EnableKeyboard())
+grammar.add_rule(DisableKeyboard())
+grammar.add_rule(EnableKeyboard())
 
 grammar.load()
 
