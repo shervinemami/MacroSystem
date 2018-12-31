@@ -385,7 +385,6 @@ class KeystrokeRule(MappingRule):
         Choice("modifier1", modifierMap),
         Choice("modifier2", modifierMap),
         Choice("modifierSingle", singleModifierMap),
-        Choice("pressKey", pressKeyMap),
     ]
     defaults = {
         "n": 1,
