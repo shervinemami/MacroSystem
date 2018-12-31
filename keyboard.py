@@ -153,7 +153,7 @@ letterMap = {
     "(queen|clean) ": "q",
     "(rod) ": "r",
     "(soy) ": "s",
-    "(tay) ": "t",
+    "(tay|test) ": "t",
     "(you) ": "u",
     "(video) ": "v",     # My "vix" is like "mix". My "vax" is like "backspace". My "van" is a bit like "then"
     "(wes|worse) ": "w",
