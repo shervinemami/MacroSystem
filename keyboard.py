@@ -148,7 +148,7 @@ letterMap = {
     "(kernel) ": "k",		# careful of equal.  My "kaput" is like "up". My "kilo" sometimes gets picked up as "killer"
     "(lazy) ": "l",	  # My "lima" is like "clean" and "end". My L sometimes gets picked up as "help". "L" is like Dragon keyword "spell" :-(
     "(most) ": "m",       # Mix is a bit like minus?  # My "mike" is similar to "my"
-    "(nash) ": "n",          # nook?  "Nippy" is like "up"
+    "(niche) ": "n",          # nook?  "Nippy" is like "up"
     "(omar) ": "o",     # ox?  My "osh" is like "as"
     "(pom) ": "p",     # My "pom" is like "upon"
     "(queen|clean) ": "q",
