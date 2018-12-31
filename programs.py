@@ -86,16 +86,16 @@ class ProgramsRule(MappingRule):
         #'minimize window': Key('a-f9'),
 
         # Some custom shortcuts to open my fav applications. Use autohotkey to switch to these programs when needed.
-        "switch to Firefox": Key("ctrl:down/3, win:down/3, alt:down/3, f") + Key("ctrl:up, win:up, alt:up"),
-        "switch to console": Key("ctrl:down/3, win:down/3, alt:down/3, c") + Key("ctrl:up, win:up, alt:up"),
-        "switch to text":    Key("ctrl:down/3, win:down/3, alt:down/3, t") + Key("ctrl:up, win:up, alt:up"),
-        "switch to sublime": Key("ctrl:down/3, win:down/3, alt:down/3, s") + Key("ctrl:up, win:up, alt:up"),
-        "switch to dolphin": Key("ctrl:down/3, win:down/3, alt:down/3, d") + Key("ctrl:up, win:up, alt:up"),
+        "go to Firefox": Key("ctrl:down/3, win:down/3, alt:down/3, f") + Key("ctrl:up, win:up, alt:up"),
+        "go to console": Key("ctrl:down/3, win:down/3, alt:down/3, c") + Key("ctrl:up, win:up, alt:up"),
+        "go to text":    Key("ctrl:down/3, win:down/3, alt:down/3, t") + Key("ctrl:up, win:up, alt:up"),
+        "go to sublime": Key("ctrl:down/3, win:down/3, alt:down/3, s") + Key("ctrl:up, win:up, alt:up"),
+        "go to dolphin": Key("ctrl:down/3, win:down/3, alt:down/3, d") + Key("ctrl:up, win:up, alt:up"),
 
         # For some common operations that vary between applications, run a Linux AutoKey macro to figure out the correct keyboard shortcut.
         "find":             Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, f") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "switch left":      Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "switch right":     Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "go to left":      Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "go to right":     Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r") + Key("ctrl:up, win:up, alt:up, shift:up"),
 
         # Konsole shortcuts
         "search": Key("c-r"),   # Ctrl+R
