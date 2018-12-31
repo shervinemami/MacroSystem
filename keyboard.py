@@ -182,44 +182,9 @@ numberMap = {
     "nine": "9",
 }
 
-# WHAT IS THIS SECTION FOR? IT DOESN'T SEEM TO HAVE ANY EFFECT!
-controlKeyMap = {
-    "left": "left",
-    "right": "right",
-    "up": "up",
-    "down": "down",
-    "page up": "pgup",
-    "page down": "pgdown",
-    "home": "home",
-    "end": "end",
-    "space": "space",
-    "(enter)": "enter",
-    "escape": "escape",
-    "tab": "tab",
-    "backspace": "backspace"
-}
-
-# F1 to F12. (do these actually work?)
-NOT_USED_functionKeyMap = {
-    'F one': 'f1',
-    'F two': 'f2',
-    'F three': 'f3',
-    'F four': 'f4',
-    'F five': 'f5',
-    'F six': 'f6',
-    'F seven': 'f7',
-    'F eight': 'f8',
-    'F nine': 'f9',
-    'F ten': 'f10',
-    'F eleven': 'f11',
-    'F twelve': 'f12',
-}
-
 pressKeyMap = {}
 pressKeyMap.update(letterMap)
-pressKeyMap.update(numberMap)
-pressKeyMap.update(controlKeyMap)
-#pressKeyMap.update(functionKeyMap)
+#pressKeyMap.update(numberMap)
 
 
 def handle_word(text):
@@ -332,11 +297,11 @@ grammarCfg.cmd.map = Item(
         #"hold met": Key("alt:down/3"),
         #"release met": Key("alt:up"),
         "shift": Key("shift:down/3"),
-        "hold shift": Key("shift:down"),
-        "release shift": Key("shift:up"),
+        #"hold shift": Key("shift:down"),
+        #"release shift": Key("shift:up"),
         "control": Key("ctrl:down/3"),
-        "hold control": Key("ctrl:down"),
-        "release control": Key("ctrl:up"),
+        #"hold control": Key("ctrl:down"),
+        #"release control": Key("ctrl:up"),
         "release all": release,
         "press key <pressKey>": Key("%(pressKey)s"),
 
