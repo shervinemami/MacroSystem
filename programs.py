@@ -88,7 +88,7 @@ class ProgramsRule(MappingRule):
         # Konsole shortcuts
         "search": Key("c-r"),   # Ctrl+R
         #"find": Key("ctrl:down/3, shift:down/3, f") + Key("ctrl:up, shift:up"),   # Ctrl+Shift+F
-        # Run a Linux AutoKey script to figure out the correct keyboard shortcut.
+        # Run a Linux AutoKey macro to figure out the correct keyboard shortcut.
         "find": Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, f") + Key("ctrl:up, win:up, alt:up, shift:up"),
 
         # Some custom shortcuts to open my fav applications. Use autohotkey to switch to these programs when needed.
