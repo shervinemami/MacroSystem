@@ -64,6 +64,7 @@ command_table = [
     'force natlink to reload all grammars',
     'disable keyboard',
     'enable keyboard',
+    'shervs test',
     ]
 command_table = aenea.configuration.make_grammar_commands(
     'aenea',
@@ -142,12 +143,19 @@ def reload_code():
     unload_code()
     load_code()
 
+def shervstest():
+    print "Running Shervs Test!"
+    from six.moves import xmlrpc_client
+
 
 class DisableKeyboard(dragonfly.MappingRule):
     mapping = {command_table['disable keyboard']: dragonfly.Function(unload_code)}
 
 class EnableKeyboard(dragonfly.MappingRule):
     mapping = {command_table['enable keyboard']: dragonfly.Function(load_code)}
+
+class ShervsTest(dragonfly.MappingRule):
+    mapping = {command_table['shervs test']: dragonfly.Function(shervstest)}
 
 
 # Note that you do not need to turn mic off and then on after saying this.  This
@@ -182,6 +190,7 @@ grammar.add_rule(ReloadGrammarsRule())
 grammar.add_rule(ChangeServer())
 grammar.add_rule(DisableKeyboard())
 grammar.add_rule(EnableKeyboard())
+grammar.add_rule(ShervsTest())
 
 grammar.load()
 
