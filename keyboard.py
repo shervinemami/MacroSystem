@@ -133,7 +133,7 @@ singleModifierMap = {
     "super": "win",
 }
 
-
+ijkljklmklmnklmnolmnolmn
 letterMap = {
     "(as) ": "a",                                   #"(aim|and) ": "a",		# careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
     "(black) ": "b",        #  "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
@@ -150,7 +150,7 @@ letterMap = {
     "(most) ": "m",       # Mix is a bit like minus?  # My "mike" is similar to "my"
     "(niche) ": "n",          # nook?  "Nippy" is like "up"
     "(omar) ": "o",     # ox?  My "osh" is like "as"
-    "(pom) ": "p",     # My "pom" is like "upon"
+    "(pingu) ": "p",     # My "pom" is like "upon" and "up home"
     "(queen|clean) ": "q",
     "(rod) ": "r",
     "(size) ": "s",
