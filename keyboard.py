@@ -133,6 +133,7 @@ singleModifierMap = {
     "super": "win",
 }
 
+
 letterMap = {
     "(as) ": "a",                                   #"(aim|and) ": "a",		# careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
     "(black) ": "b",        #  "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
@@ -140,7 +141,7 @@ letterMap = {
     "(dim) ": "d",		# My "dim" is a bit like "ding". My "dug" is a bit like dot. # My "des" sometimes gets picked up as "this". My "desk" sometimes gets picked up as "verse", and sometimes "dose", "this".
     "(echo) ": "e",		# careful of x, f
     "(fox|false) ": "f",		# My "fox" is like "false" # careful of F1, F2 ...
-    "(goof) ": "g",             # My "gang" is like "can"
+    "(golf) ": "g",             # My "gang" is like "can"
     "(hotel) ": "h",		# careful of 8
     "(itchy) ": "i",
     "(julia) ": "j",
@@ -161,6 +162,7 @@ letterMap = {
     "(yang) ": "y",             # My "why" is like "white" that is like "why tay"
     "(zed|said) ": "z",     # My "zed" is like "said" and "set"
 }
+
 
 # generate uppercase versions of every letter
 upperLetterMap = {}
