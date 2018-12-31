@@ -145,7 +145,7 @@ letterMap = {
     "(hotel) ": "h",		# careful of 8
     "(itchy) ": "i",
     "(julia) ": "j",
-    "(kaput) ": "k",		# careful of equal.  My "kilo" sometimes gets picked up as "killer"
+    "(kaput) ": "k",		# careful of equal.  My "kaput" is like "up". My "kilo" sometimes gets picked up as "killer"
     "(lazy) ": "l",	  # My "lima" is like "clean" and "end". My L sometimes gets picked up as "help". "L" is like Dragon keyword "spell" :-(
     "(most) ": "m",       # Mix is a bit like minus?  # My "mike" is similar to "my"
     "(nippy) ": "n",          # nook?
