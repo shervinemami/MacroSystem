@@ -429,7 +429,7 @@ class KeystrokeRule(MappingRule):
     mapping = grammarCfg.cmd.map
     extras = [
         IntegerRef("n", 1, 100),
-        IntegerRef("num", 0, 1000000),
+        IntegerRef("num", 0, 100),
         Dictation("text"),
         Dictation("text2"),
         Choice("char", specialCharMap),
