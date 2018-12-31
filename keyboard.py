@@ -157,7 +157,7 @@ letterMap = {
     "(teach) ": "t",
     "(unix) ": "u",          # "urge"?
     "(video) ": "v",            # My "vix" is like "mix". My "vax" is like "backspace". My "van" is a bit like "then"
-    "(wes) ": "w",              # My "wes" is like "worse"
+    "(wins) ": "w",              # My "wes" is like "worse"
     "(x-ray) ": "x",
     "(yang) ": "y",             # My "why" is like "white" that is like "why tay"
     "(zed|said) ": "z",     # My "zed" is like "said" and "set"
