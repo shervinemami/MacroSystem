@@ -169,23 +169,6 @@ for letter in letterMap:
     #upperLetterMap["sky " + letter] = letterMap[letter].upper()         # My "sky" is too much like Dragon keyword "score" :-(
 letterMap.update(upperLetterMap)
 
-numberMap = {
-    "zero": "0",
-    "one": "1",
-    "two": "2",
-    "three": "3",
-    "four": "4",
-    "five": "5",
-    "six": "6",
-    "seven": "7",
-    "eight": "8",
-    "nine": "9",
-}
-
-pressKeyMap = {}
-pressKeyMap.update(letterMap)
-#pressKeyMap.update(numberMap)
-
 
 def handle_word(text):
     #words = map(list, text)
@@ -303,7 +286,7 @@ grammarCfg.cmd.map = Item(
         #"hold control": Key("ctrl:down"),
         #"release control": Key("ctrl:up"),
         "release all": release,
-        "press key <pressKey>": Key("%(pressKey)s"),
+        #"press key <pressKey>": Key("%(pressKey)s"),
 
         # Try to override some Dragon commands that we might say:
         "score": Text("?"),
