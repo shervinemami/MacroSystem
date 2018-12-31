@@ -92,7 +92,9 @@ class EnableRule(dragonfly.CompoundRule):
         aenea.config.enable_proxy()
 
 
-def reload_code():
+def unload_code():
+    print "Unloading aenea code"
+
     # Do not reload anything in these directories or their subdirectories.
     dir_reload_blacklist = set(["core"])
     macro_dir = "C:\\NatLink\\NatLink\\MacroSystem"
@@ -125,6 +127,8 @@ def reload_code():
                 # end with __init__.pyc so this # takes care of them as well.
                 del sys.modules[name]
 
+def load_code():
+    print "Loading aenea code"
     try:
         # Reload the top-level modules in macro_dir if natlinkmain is available.
         if natlinkmain:
@@ -134,27 +138,16 @@ def reload_code():
     else:
         print "finished reloading"
 
+def reload_code():
+    unload_code()
+    load_code()
 
-def dummy():
-    print "SHERV In my dummy() function"
 
-class DisableKeyboard(dragonfly.CompoundRule):
-    spec = command_table['disable keyboard']
+class DisableKeyboard(dragonfly.MappingRule):
+    mapping = {command_table['disable keyboard']: dragonfly.Function(unload_code)}
 
-    def _process_recognition(self, node, extras):
-        print "SHERV In DisableKeyboard()"
-        #server_list = dragonfly.DictList('aenea servers')
-        #print server_list
-        #mapping = {command_table['disable keyboard']: dragonfly.Function(dummy)}
-
-class EnableKeyboard(dragonfly.CompoundRule):
-    spec = command_table['enable keyboard']
-
-    def _process_recognition(self, node, extras):
-        print "SHERV In EnableKeyboard()"
-        #server_list = dragonfly.DictList('aenea servers')
-        #print server_list
-        #mapping = {command_table['enable keyboard']: dragonfly.Function(dummy)}
+class EnableKeyboard(dragonfly.MappingRule):
+    mapping = {command_table['enable keyboard']: dragonfly.Function(load_code)}
 
 
 # Note that you do not need to turn mic off and then on after saying this.  This
