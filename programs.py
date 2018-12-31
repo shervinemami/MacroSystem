@@ -70,7 +70,7 @@ class ProgramsRule(MappingRule):
         'browser forward [<n>]': Key('a-right:%(n)d'),
         'browser previous [<n>]': Key('c-pgup:%(n)d'),
         'browser next [<n>]': Key('c-pgdown:%(n)d'),
-        'browser new': Key('c-t'),
+        '#browser new': Key('c-t'),
         'browser close': Key('c-w'),
 
         ## Xfce-like desktop environment commands
