@@ -96,6 +96,8 @@ class ProgramsRule(MappingRule):
         "find":          Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, f") + Key("ctrl:up, win:up, alt:up, shift:up"),
         "go to left":    Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l") + Key("ctrl:up, win:up, alt:up, shift:up"),
         "go to right":   Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "go to home":    Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, h") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "go to end":     Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, e") + Key("ctrl:up, win:up, alt:up, shift:up"),
 
         # Konsole shortcuts
         "search": Key("c-r"),   # Ctrl+R
