@@ -281,7 +281,6 @@ grammarCfg.cmd.map = Item(
         #"release met": Key("alt:up"),
 
         # My current aenea proxy system isn't allowing to hold down shift or caps lock, so I'm using Linux AutoKey instead. See "programs.py"
-
         "shift": Key("shift:down/3"),
         #"hold shift": Key("shift:down"),
         #"release shift": Key("shift:up"),
