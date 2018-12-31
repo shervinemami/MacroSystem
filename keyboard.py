@@ -153,7 +153,7 @@ letterMap = {
     "(pom) ": "p",     # My "pom" is like "upon"
     "(queen|clean) ": "q",
     "(rod) ": "r",
-    "(stuck) ": "s",
+    "(stick) ": "s",
     "(teach) ": "t",
     "(urge) ": "u",
     "(video) ": "v",            # My "vix" is like "mix". My "vax" is like "backspace". My "van" is a bit like "then"
