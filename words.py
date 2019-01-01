@@ -98,7 +98,7 @@ class FormatRule(CompoundRule):
             words = [word.upper() for word in words]
 
         words = [word.split('\\', 1)[0].replace('-', '') for word in words]
-        if words[0].lower() in ('upper', 'natural'):
+        if words[0].lower() in ('uppercase', 'natural'):
             del words[0]
 
         bomb = None
