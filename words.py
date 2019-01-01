@@ -38,45 +38,45 @@ from aenea import (
     Text
 )
 
-
 lastFormatRuleLength = 0
 lastFormatRuleWords = []
-class NopeFormatRule(CompoundRule):
-    spec = ('nope')
 
-    def value(self, node):
-        global lastFormatRuleLength
-        print "erasing previous format of length", lastFormatRuleLength
-        return Key('backspace:' + str(lastFormatRuleLength))
-
-class ReFormatRule(CompoundRule):
-    spec = ('that was [upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
-            'scope-resolve | jumble | dotword | dashword | natword | snakeword | brooding-narrative)')
-
-    def value(self, node):
-        global lastFormatRuleWords
-        words = lastFormatRuleWords
-        words = node.words()[2:] + lastFormatRuleWords
-        print words
-
-        uppercase = words[0] == 'upper'
-        lowercase = words[0] != 'natural'
-
-        if lowercase:
-            words = [word.lower() for word in words]
-        if uppercase:
-            words = [word.upper() for word in words]
-
-        words = [word.split('\\', 1)[0].replace('-', '') for word in words]
-        if words[0].lower() in ('upper', 'natural'):
-            del words[0]
-
-        function = getattr(aenea.format, 'format_%s' % words[0].lower())
-        formatted = function(words[1:])
-
-        global lastFormatRuleLength
-        lastFormatRuleLength = len(formatted)
-        return Text(formatted)
+#class NopeFormatRule(CompoundRule):
+#    spec = ('nope')
+#
+#    def value(self, node):
+#        global lastFormatRuleLength
+#        print "erasing previous format of length", lastFormatRuleLength
+#        return Key('backspace:' + str(lastFormatRuleLength))
+#
+#class ReFormatRule(CompoundRule):
+#    spec = ('that was [upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
+#            'scope-resolve | jumble | dotword | dashword | natword | snakeword | brooding-narrative)')
+#
+#    def value(self, node):
+#        global lastFormatRuleWords
+#        words = lastFormatRuleWords
+#        words = node.words()[2:] + lastFormatRuleWords
+#        print words
+#
+#        uppercase = words[0] == 'upper'
+#        lowercase = words[0] != 'natural'
+#
+#        if lowercase:
+#            words = [word.lower() for word in words]
+#        if uppercase:
+#            words = [word.upper() for word in words]
+#
+#        words = [word.split('\\', 1)[0].replace('-', '') for word in words]
+#        if words[0].lower() in ('upper', 'natural'):
+#            del words[0]
+#
+#        function = getattr(aenea.format, 'format_%s' % words[0].lower())
+#        formatted = function(words[1:])
+#
+#        global lastFormatRuleLength
+#        lastFormatRuleLength = len(formatted)
+#        return Text(formatted)
 
 class FormatRule(CompoundRule):
     spec = ('[upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
