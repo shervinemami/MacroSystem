@@ -362,9 +362,9 @@ grammarCfg.cmd.map = Item(
 
         # Text corrections.
         #"again": Key("ctrl:down/3, shift:down/3, left") + Key("ctrl:up, shift:up"), # Type over a word
-        "fix missing space": Key("c-left/3, space, c-right/3"),
-        "remove extra space": Key("c-left/3, backspace, c-right/3"),  # @IgnorePep8
-        "remove extra character": Key("c-left/3, del, c-right/3"),  # @IgnorePep8
+        #"fix missing space": Key("c-left/3, space, c-right/3"),
+        #"remove extra space": Key("c-left/3, backspace, c-right/3"),  # @IgnorePep8
+        #"remove extra character": Key("c-left/3, del, c-right/3"),  # @IgnorePep8
         # Microphone sleep/cancel started dictation.
         #"[<text>] (go to sleep|cancel and sleep) [<text2>]": Function(cancel_and_sleep),  # @IgnorePep8
     },
