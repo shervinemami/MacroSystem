@@ -86,20 +86,20 @@ class ProgramsRule(MappingRule):
         #'minimize window': Key('a-f9'),
 
         # Some custom shortcuts to open my fav applications. Use Linux AutoKey to switch to these programs when needed.
-        "go to Firefox": Key("ctrl:down/3, win:down/3, alt:down/3, f") + Key("ctrl:up, win:up, alt:up"),
-        "go to console": Key("ctrl:down/3, win:down/3, alt:down/3, c") + Key("ctrl:up, win:up, alt:up"),
-        "go to text":    Key("ctrl:down/3, win:down/3, alt:down/3, t") + Key("ctrl:up, win:up, alt:up"),
-        "go to sublime": Key("ctrl:down/3, win:down/3, alt:down/3, s") + Key("ctrl:up, win:up, alt:up"),
-        "go to dolphin": Key("ctrl:down/3, win:down/3, alt:down/3, d") + Key("ctrl:up, win:up, alt:up"),
+        "go to Firefox":   Key("ctrl:down/3, win:down/3, alt:down/3, f") + Key("ctrl:up, win:up, alt:up"),
+        "go to console":   Key("ctrl:down/3, win:down/3, alt:down/3, c") + Key("ctrl:up, win:up, alt:up"),
+        "go to text":      Key("ctrl:down/3, win:down/3, alt:down/3, t") + Key("ctrl:up, win:up, alt:up"),
+        "go to sublime":   Key("ctrl:down/3, win:down/3, alt:down/3, s") + Key("ctrl:up, win:up, alt:up"),
+        "go to dolphin":   Key("ctrl:down/3, win:down/3, alt:down/3, d") + Key("ctrl:up, win:up, alt:up"),
 
         # For some universal operations that vary between applications, run a Linux AutoKey macro to figure out the correct keyboard shortcut.
-        "find":          Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, f") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "go tab left":   Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "go tab right":  Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "close tab":     Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, c") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "find":            Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, f") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "go to tab left":  Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "go to tab right": Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "close tab":       Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, c") + Key("ctrl:up, win:up, alt:up, shift:up"),
 
         # My current aenea proxy system isn't allowing to hold down shift or caps lock, so try using Linux AutoKey instead
-        "press caps lock":     Key("ctrl:down/3, win:down/3, alt:down/3, z") + Key("ctrl:up, win:up, alt:up"),
+        "press caps lock": Key("ctrl:down/3, win:down/3, alt:down/3, z") + Key("ctrl:up, win:up, alt:up"),
 
         # Konsole shortcuts
         "search": Key("c-r"),   # Ctrcl+R
