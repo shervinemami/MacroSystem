@@ -79,8 +79,10 @@ lastFormatRuleWords = []
 #        return Text(formatted)
 
 class FormatRule(CompoundRule):
-    spec = ('[upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
-            'scope-resolve | jumble | dotword | dashword | natword | snakeword | brooding-narrative) [<dictation>] [bomb]')
+    #spec = ('[upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
+    #        'scope-resolve | jumble | dotword | dashword | natword | snakeword | brooding-narrative) [<dictation>] [bomb]')
+    spec = ('( proper | camel | rel-path | abs-path | [upper] score | [upper] sentence | '
+            'scope-resolve | [upper] jumble | [upper] dotword | [upper] dashword | [upper] natword | snakeword | brooding-narrative) [<dictation>] [bomb]')
     extras = [Dictation(name='dictation')]
 
     def value(self, node):
@@ -88,10 +90,10 @@ class FormatRule(CompoundRule):
         print "format rule:", words
 
         uppercase = words[0] == 'upper'
-        lowercase = words[0] != 'natural'
+        #lowercase = words[0] != 'natural'
 
-        if lowercase:
-            words = [word.lower() for word in words]
+        #if lowercase:
+        #    words = [word.lower() for word in words]
         if uppercase:
             words = [word.upper() for word in words]
 
