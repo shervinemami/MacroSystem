@@ -117,21 +117,21 @@ specialCharMap = {
     # 'underscore | score': Key('underscore'),
 }
 
-# Modifiers for the press-command.
-modifierMap = {
-    "alt": "a",
-    "control": "c",
-    "shift": "s",
-    "super": "w",
-}
-
-# Modifiers for the press-command, if only the modifier is pressed.
-singleModifierMap = {
-    "alt": "alt",
-    "control": "ctrl",
-    "shift": "shift",
-    "super": "win",
-}
+## Modifiers for the press-command.
+#modifierMap = {
+#    "alt": "a",
+#    "control": "c",
+#    "shift": "s",
+#    "super": "w",
+#}
+#
+## Modifiers for the press-command, if only the modifier is pressed.
+#singleModifierMap = {
+#    "alt": "alt",
+#    "control": "ctrl",
+#    "shift": "shift",
+#    "super": "win",
+#}
 
 
 letterMap = {
@@ -358,10 +358,10 @@ grammarCfg.cmd.map = Item(
 
         'word <text>': Function(handle_word),
         'number <num>': Text("%(num)d"),
-        'change <text> to <text2>': Key("home, slash") + Text("%(text)s") + Key("enter, c, e") + Text("%(text2)s") + Key("escape"),
+        #'change <text> to <text2>': Key("home, slash") + Text("%(text)s") + Key("enter, c, e") + Text("%(text2)s") + Key("escape"),
 
         # Text corrections.
-        "again": Key("ctrl:down/3, shift:down/3, left") + Key("ctrl:up, shift:up"), # Type over a word
+        #"again": Key("ctrl:down/3, shift:down/3, left") + Key("ctrl:up, shift:up"), # Type over a word
         "fix missing space": Key("c-left/3, space, c-right/3"),
         "remove extra space": Key("c-left/3, backspace, c-right/3"),  # @IgnorePep8
         "remove extra character": Key("c-left/3, del, c-right/3"),  # @IgnorePep8
@@ -382,15 +382,13 @@ class KeystrokeRule(MappingRule):
         IntegerRef("n", 1, 100),
         IntegerRef("num", 0, 100),
         Dictation("text"),
-        Dictation("text2"),
+        #Dictation("text2"),
         Choice("char", specialCharMap),
         Choice("letters", letterMap),
-        Choice("modifier1", modifierMap),
-        Choice("modifier2", modifierMap),
-        Choice("modifierSingle", singleModifierMap),
+        #Choice("modifier1", modifierMap),
+        #Choice("modifier2", modifierMap),
+        #Choice("modifierSingle", singleModifierMap),
     ]
     defaults = {
         "n": 1,
     }
-
-
