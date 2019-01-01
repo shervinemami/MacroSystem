@@ -268,12 +268,14 @@ grammarCfg.cmd.map = Item(
         "window 2": Key("win:down/3") + Text("2") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
         "window 3": Key("win:down/3") + Text("3") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
         "window 4": Key("win:down/3") + Text("4") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "window 5": Key("win:down/3") + Text("5") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
         #"meta [<num>]": Key("alt:down/3") + Text("%(num)d") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		"meta": Key("alt:down/3"),    # Or do I prefer "alter"?
 		"meta 1": Key("alt:down/3") + Text("1") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		"meta 2": Key("alt:down/3") + Text("2") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		"meta 3": Key("alt:down/3") + Text("3") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		"meta 4": Key("alt:down/3") + Text("4") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		"meta 5": Key("alt:down/3") + Text("5") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		#"meta 5": Key("alt:down/3") + Text("5") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		#"meta 6": Key("alt:down/3") + Text("6") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		#"meta 7": Key("alt:down/3") + Text("7") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
