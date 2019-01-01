@@ -294,9 +294,6 @@ grammarCfg.cmd.map = Item(
         "release all": Key("shift:up, ctrl:up, alt:up, win:up"),
         #"press key <pressKey>": Key("%(pressKey)s"),
 
-        # Try to override some Dragon commands that we might say:
-        "score": Text("?"),
-
         # Closures.
         #"angle brackets": Key("langle, rangle, left/3"),
         #"[square] brackets": Key("lbracket, rbracket, left/3"),
