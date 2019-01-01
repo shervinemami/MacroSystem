@@ -81,15 +81,15 @@ lastFormatRuleWords = []
 class FormatRule(CompoundRule):
     #spec = ('[upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
     #        'scope-resolve | jumble | dotword | dashword | natword | snakeword | brooding-narrative) [<dictation>] [bomb]')
-    spec = ('( proper | camel | rel-path | abs-path | [upper] score | [upper] sentence | '
-            'scope-resolve | [upper] jumble | [upper] dotword | [upper] dashword | [upper] natword | snakeword | brooding-narrative) [<dictation>] [bomb]')
+    spec = ('( proper | camel | rel-path | abs-path | [uppercase] score | [uppercase] sentence | '
+            'scope-resolve | [uppercase] jumble | [uppercase] dotword | [uppercase] dashword | [uppercase] natword | snakeword | brooding-narrative) [<dictation>] [bomb]')
     extras = [Dictation(name='dictation')]
 
     def value(self, node):
         words = node.words()
         print "format rule:", words
 
-        uppercase = words[0] == 'upper'
+        uppercase = words[0] == 'uppercase'
         #lowercase = words[0] != 'natural'
 
         #if lowercase:
