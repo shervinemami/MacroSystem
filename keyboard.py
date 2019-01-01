@@ -262,7 +262,7 @@ grammarCfg.cmd.map = Item(
         #"win key": release + Key("win/3"),
         #"window <char>": Key("win:down/3") + Text("%(char)s") + Key("win:up"),
         #"window run": Key("win:down/3") + Text("r") + Key("win:up"),
-        "release window": Key("win:up"),
+        #"release window": Key("win:up"),
         #"window [<num>]": Key("win:down/3") + Text("%(num)d") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
         "window 1": Key("win:down/3") + Text("1") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
         "window 2": Key("win:down/3") + Text("2") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
@@ -291,7 +291,7 @@ grammarCfg.cmd.map = Item(
         "control": Key("ctrl:down/3"),
         #"hold control": Key("ctrl:down"),
         #"release control": Key("ctrl:up"),
-        "release all": release,
+        "release all": Key("shift:up, ctrl:up, alt:up, win:up"),
         #"press key <pressKey>": Key("%(pressKey)s"),
 
         # Try to override some Dragon commands that we might say:
