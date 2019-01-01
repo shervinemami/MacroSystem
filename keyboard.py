@@ -258,10 +258,6 @@ grammarCfg.cmd.map = Item(
         'F ten': Key('f10'),
         'F eleven': Key('f11'),
         'F twelve': Key('f12'),
-        'F thirteen': Key('f13'),
-        'F fourteen': Key('f14'),
-        'F fifteen': Key('f15'),
-        'F sixteen': Key('f16'),
 
         #"win key": release + Key("win/3"),
         #"window <char>": Key("win:down/3") + Text("%(char)s") + Key("win:up"),
