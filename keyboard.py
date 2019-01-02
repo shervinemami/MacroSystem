@@ -137,7 +137,7 @@ specialCharMap = {
 
 letterMap = {
     "(acid) ": "a",         # alpha is a bit like up. axis is like backspace. "(aim|and) ": "a",		# careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
-    "(brainy) ": "b",        #  "brown" is like down. "black" is like "ebike", "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
+    "(brain) ": "b",        #  "brown" is like down. "black" is like "ebike", "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
     "(char) ": "c",
     "(dozen) ": "d",		# "does" is like "geez", "drax" is like "right". "dam" is like down. "dim" is like "ding". "dug" is like dot. "des" is like "this". "desk" is like "verse", "dose", "this".
     "(ebike) ": "e",		# "ebike" is like "end black", "evo" isn't getting picked up! careful of x, see, end, as, up
@@ -153,10 +153,10 @@ letterMap = {
     "(omez) ": "o",     # orange is like end. oryx is like "echo".  My "osh" is like "as". My "omar" is like "home up"
     "(pingu) ": "p",     # My "pom" is like "upon" and "up home"
     "(queen) ": "q",    # "queen" is like "clean"
-    "(rolexy) ": "r",          # rolex is like krux. "rod" is like "right"
+    "(rolex) ": "r",          # rolex is like krux. "rod" is like "right"
     "(salty) ": "s",     # "sook" is like "up", "size" is like "keys". careful of snake, space,
     "(trish) ": "t",        # tricky is like keys # teach is like itchy
-    "(unixy) ": "u",          # "urge"? # careful of yang
+    "(unix) ": "u",          # "urge"? # careful of yang
     "(video) ": "v",            # My "vix" is like "mix". My "vax" is like "backspace". My "van" is a bit like "then"
     "(wages) ": "w",      # wintel is like hotel, end and enter. week is like queen. "wes" is like "worse"
     "(x-ray) ": "x",
