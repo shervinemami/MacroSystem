@@ -153,7 +153,7 @@ letterMap = {
     "(omez) ": "o",     # orange is like end. oryx is like "echo".  My "osh" is like "as". My "omar" is like "home up"
     "(premier) ": "p",     # please is like lazy and xray, pingu is like undo. "pom" is like "upon" and "up home"
     "(queen) ": "q",    # "queen" is like "clean"
-    "(redux) ": "r",          # rolex is like krux and home. "rod" is like "right"
+    "(redux) ": "r",          # rolex is like home. "rod" is like "right"
     "(salty) ": "s",     # "sook" is like "up", "size" is like "keys". careful of snake, space,
     "(trish) ": "t",        # tricky is like keys # teach is like itchy
     "(unix) ": "u",          # "urge"? # careful of yang
