@@ -64,7 +64,7 @@ specialCharMap = {
     "comma": ",",
     "backslash": "\\",
     "underscore": "_",
-    "star": "*",
+    "(asterisk|Asterix)": "*",
     "colon": ":",
     "(semicolon|semi-colon)": ";",
     "at symbol": "@",
@@ -73,16 +73,16 @@ specialCharMap = {
     "single quote": "'",
     "apostrophe": "'",
     "hash": "#",
-    "dollar": "$",
-    "percent": "%",
+    "dollar sign": "$",
+    "percentage": "%",
     "ampersand": "&",
     "slash": "/",
     "equals": "=",
     "plus": "+",
     "space": " ",
-    "exclamation": "!",		# "bang" sounds like "aim" that I might use for "a"
+    "exclamation mark": "!",		# "bang" sounds like "aim" that I might use for "a"
 	#"bang": "!",
-    "question": "?",
+    "question mark": "?",
     "caret": "^",
 	"tilde": "~",
 	"back tick": "`",
@@ -133,34 +133,35 @@ specialCharMap = {
 #    "super": "win",
 #}
 
+# Careful of any word that sounds similar to up, 8, 1, 2, and Dragon keywords "spell", "click", "select"!
 
 letterMap = {
-    "(as) ": "a",                                   #"(aim|and) ": "a",		# careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
-    "(black) ": "b",        #  "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
-    "(see) ": "c",
-    "(drax) ": "d",		# My "dam" is like down. My "dim" is a bit like "ding". My "dug" is a bit like dot. # My "des" sometimes gets picked up as "this". My "desk" sometimes gets picked up as "verse", and sometimes "dose", "this".
-    "(echo) ": "e",		# careful of x, f
-    "(fox|false) ": "f",		# My "fox" is like "false" # careful of F1, F2 ...
+    "(acid) ": "a",         # alpha is a bit like up. axis is like backspace. "(aim|and) ": "a",		# careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
+    "(brain) ": "b",        #  "brown" is like down. "black" is like "ebike", "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
+    "(char) ": "c",
+    "(dozen) ": "d",		# "does" is like "geez", "drax" is like "right". "dam" is like down. "dim" is like "ding". "dug" is like dot. "des" is like "this". "desk" is like "verse", "dose", "this".
+    "(ebike) ": "e",		# "ebike" is like "end black", "evo" isn't getting picked up! careful of x, see, end, as, up
+    "(foxy) ": "f",		# My "fox" is like "false" # careful of F1, F2 ...
     "(golf) ": "g",             # My "gang" is like "can"
-    "(hotel) ": "h",		# careful of 8
-    "(itchy) ": "i",
+    "(hotel) ": "h",		# careful of 8 and quote
+    "(itchy) ": "i",        # itchy is like teach
     "(julia) ": "j",
-    "(kernel) ": "k",		# careful of equal.  My "kaput" is like "up". My "kilo" sometimes gets picked up as "killer"
-    "(lazy) ": "l",	  # My "lima" is like "clean" and "end". My L sometimes gets picked up as "help". "L" is like Dragon keyword "spell" :-(
-    "(most) ": "m",       # Mix is a bit like minus?  # My "mike" is similar to "my"
-    "(niche) ": "n",          # nook?  "Nippy" is like "up"
-    "(orange) ": "o",     # My oryx is like "echo".  My "osh" is like "as". My "omar" is like "home up"
+    "(krife) ": "k",		#kidding? krog? # krux is like plus. careful of equal, colon, capital queen, geez.  My "kaput" is like "up". My "kilo" sometimes gets picked up as "killer"
+    "(lazy) ": "l",	  # lucy? My "lima" is like "clean" and "end". My L sometimes gets picked up as "help". "L" is like Dragon keyword "spell" :-(
+    "(miley) ": "m",       # Mosfet is somehow like "plus" and "space"! # Mix is a bit like minus?  # My "mike" is similar to "my"
+    "(newish) ": "n",   # noosh is maybe like mosfet. niche is like unix. # nose?  "Nippy" is like "up"
+    "(omez) ": "o",     # orange is like end. oryx is like "echo".  My "osh" is like "as". My "omar" is like "home up"
     "(pingu) ": "p",     # My "pom" is like "upon" and "up home"
-    "(queen|clean) ": "q",
-    "(rolex) ": "r",          # My "rod" is like "right"
-    "(size) ": "s",
-    "(teach) ": "t",
-    "(unix) ": "u",          # "urge"?
+    "(queen) ": "q",    # "queen" is like "clean"
+    "(rolex) ": "r",          # rolex is like krux. "rod" is like "right"
+    "(salty) ": "s",     # "sook" is like "up", "size" is like "keys". careful of snake, space,
+    "(trish) ": "t",        # tricky is like keys # teach is like itchy
+    "(unix) ": "u",          # "urge"? # careful of yang
     "(video) ": "v",            # My "vix" is like "mix". My "vax" is like "backspace". My "van" is a bit like "then"
-    "(wins) ": "w",              # My "wes" is like "worse"
+    "(wintel) ": "w",              # wintel is like hotel and end. My "wes" is like "worse"
     "(x-ray) ": "x",
-    "(yang) ": "y",             # My "why" is like "white" that is like "why tay"
-    "(zed|said) ": "z",     # My "zed" is like "said" and "set"
+    "(yoko) ": "y",     # yeeshim is like shift, yiddish is like trish, yazzam is like home or down, yeast is like left. yellow is like "end left", yoke is like black. # "yang" is like "end". Careful of letter "u", home. "why" is like "white" that is like "why tay"
+    "(zidacious) ": "z",     # zirconium? zircumference? zosepi? zultani is like up home, zood is like undo and rude, zooki? zyxel is like click, zooch & zener are like insert! zulu, zoolex, zolex & zook often aren't getting picked up! "zed" is like "said" and "set"
 }
 
 
@@ -188,14 +189,14 @@ grammarCfg.cmd = Section("Language section")
 grammarCfg.cmd.map = Item(
     {
         # Navigation keys.
-        "up [<n>]": Key("up:%(n)d"),
-        "down [<n>]": Key("down:%(n)d"),
-        "left [<n>]": Key("left:%(n)d"),
-        "right [<n>]": Key("right:%(n)d"),
-        "page up [<n>]": Key("pgup:%(n)d"),
-        "page down [<n>]": Key("pgdown:%(n)d"),
-        "jump [<n>]": Key("pgup:%(n)d"),
-        "drop [<n>]": Key("pgdown:%(n)d"),
+        "up [<n> times]": Key("up:%(n)d"),
+        "down [<n> times]": Key("down:%(n)d"),
+        "left [<n> times]": Key("left:%(n)d"),
+        "right [<n> times]": Key("right:%(n)d"),
+        "page up [<n> times]": Key("pgup:%(n)d"),
+        "page down [<n> times]": Key("pgdown:%(n)d"),
+        "jump [<n> times]": Key("pgup:%(n)d"),
+        "drop [<n> times]": Key("pgdown:%(n)d"),
         #"up <n> (page|pages)": Key("pgup:%(n)d"),
         #"down <n> (page|pages)": Key("pgdown:%(n)d"),
         #"left <n> (word|words)": Key("c-left/3:%(n)d/10"),
@@ -232,13 +233,13 @@ grammarCfg.cmd.map = Item(
         #"doc home": Key("c-home/3"),
         #"doc end": Key("c-end/3"),
         # Functional keys.
-        "space": release + Key("space"),
-        "space [<n>]": release + Key("space:%(n)d"),
-        "(enter) [<n>]": release + Key("enter:%(n)d"),
-        "tab [<n>]": Key("tab:%(n)d"),
-        "delete this line": Key("home, s-end, del"),  # @IgnorePep8
-        "backspace [<n>]": release + Key("backspace:%(n)d"),
-        "application key": release + Key("apps/3"),
+        #"space": release + Key("space"),
+        "space [<n> times]": release + Key("space:%(n)d"),
+        "(enter) [<n> times]": release + Key("enter:%(n)d"),
+        "tab [<n> times]": Key("tab:%(n)d"),
+        #"delete this line": Key("home, s-end, del"),  # @IgnorePep8
+        "backspace [<n> times]": release + Key("backspace:%(n)d"),
+        #"application key": release + Key("apps/3"),
         #"paste [that]": Function(paste_command),
         #"copy [that]": Function(copy_command),
         #"cut [that]": release + Key("c-x/3"),
@@ -303,8 +304,8 @@ grammarCfg.cmd.map = Item(
         #"backticks": Key("backtick:2, left"),
         #"single quotes": Key("squote, squote, left/3"),
         # Shorthand multiple characters.
-        "double <char>": Text("%(char)s%(char)s"),
-        "triple <char>": Text("%(char)s%(char)s%(char)s"),
+        #"double <char>": Text("%(char)s%(char)s"),
+        #"triple <char>": Text("%(char)s%(char)s%(char)s"),
         #"double escape": Key("escape, escape"),  # Exiting menus.
         # Punctuation and separation characters, for quick editing.
         "colon": Key("colon"),
@@ -320,21 +321,21 @@ grammarCfg.cmd.map = Item(
         "<letters>": Text("%(letters)s"),
         "<char>": Text("%(char)s"),
 
-        'less than [<n>]': Key('langle:%(n)d'),     # angle bracket
-		#'langle [<n>]': Key('langle:%(n)d'),
-        'lurly [<n>]':   Key('lbrace:%(n)d'),       # curly brace
-        'lair [<n>]':   Key('lbracket:%(n)d'),      # square bracket
-        'len [<n>]':    Key('lparen:%(n)d'),        # round parenthesis
-        'greater than [<n>]': Key('rangle:%(n)d'),
-		#'rangle [<n>]': Key('rangle:%(n)d'),
-        'rurly [<n>]':   Key('rbrace:%(n)d'),
-        'rare [<n>]':   Key('rbracket:%(n)d'),
-        '(ren|wren) [<n>]':   Key('rparen:%(n)d'),
+        'less than': Key('langle'),     # angle bracket
+		#'langle': Key('langle:%(n)d'),
+        'curly brace':   Key('lbrace'),       # curly brace
+        'square brace':   Key('lbracket'),      # square bracket
+        'round bracket':    Key('lparen'),        # round parenthesis
+        'greater than': Key('rangle'),
+		#'rangle': Key('rangle'),
+        'close curly brace':   Key('rbrace'),
+        'close square brace':   Key('rbracket'),
+        'close round bracket':   Key('rparen'),
 
-        "escape [<n>]": Key("escape:%(n)d"),
+        "escape": Key("escape"),
+        "escape 2": Key("escape") + Key("escape"),
 
-
-        'delete [<n>]':       Key('del:%(n)d'),
+        'delete [<n> times]':       Key('del:%(n)d'),
 		#'chuck [<n>]':       Key('del:%(n)d'),
         #'scratch [<n>]':     Key('backspace:%(n)d'),
 		
@@ -356,7 +357,7 @@ grammarCfg.cmd.map = Item(
 		#'undo': Key('c-z'),  # Sounds too much like "end"
 		'geez': Key('c-z'),
 
-        'word <text>': Function(handle_word),
+        #'word <text>': Function(handle_word),
         'number <num>': Text("%(num)d"),
         #'change <text> to <text2>': Key("home, slash") + Text("%(text)s") + Key("enter, c, e") + Text("%(text2)s") + Key("escape"),
 

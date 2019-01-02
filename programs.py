@@ -93,16 +93,18 @@ class ProgramsRule(MappingRule):
         "change to dolphin":   Key("ctrl:down/3, win:down/3, alt:down/3, d") + Key("ctrl:up, win:up, alt:up"),
 
         # For some universal operations that vary between applications, run a Linux AutoKey macro to figure out the correct keyboard shortcut.
-        "find":            Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, f") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "change to tab left":  Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "change to tab right": Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "close tab":       Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, c") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "find":                   Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, f") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "change to left tab":     Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "change to right tab":    Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "change to previous tab": Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, p") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "change to next tab":     Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, n") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "close tab":              Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, c") + Key("ctrl:up, win:up, alt:up, shift:up"),
 
         # My current aenea proxy system isn't allowing to hold down shift or caps lock, so try using Linux AutoKey instead
         "press caps lock": Key("ctrl:down/3, win:down/3, alt:down/3, z") + Key("ctrl:up, win:up, alt:up"),
 
         # Konsole shortcuts
-        "search": Key("c-r"),   # Ctrcl+R
+        #"search": Key("c-r"),   # Ctrl+R
         #"find": Key("ctrl:down/3, shift:down/3, f") + Key("ctrl:up, shift:up"),   # Ctrl+Shift+F
 
         "perforce": Text("p4"),
