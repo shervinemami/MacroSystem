@@ -161,7 +161,7 @@ letterMap = {
     "(wintel) ": "w",              # wintel is like hotel and end. My "wes" is like "worse"
     "(x-ray) ": "x",
     "(yoko) ": "y",     # yeeshim is like shift, yiddish is like trish, yazzam is like home or down, yeast is like left. yellow is like "end left", yoke is like black. # "yang" is like "end". Careful of letter "u", home. "why" is like "white" that is like "why tay"
-    "(zebra) ": "z",     # zirconium? zircumference? zosepi? zidacious is like shift, zultani is like up home, zood is like undo and rude, zooki? zyxel is like click, zooch & zener are like insert! zulu, zoolex, zolex & zook often aren't getting picked up! "zed" is like "said" and "set"
+    "(zebrafish) ": "z",     # zirconium? zircumference? zosepi? zidacious is like shift, zultani is like up home, zood is like undo and rude, zooki? zyxel is like click, zooch & zener are like insert! zulu, zoolex, zolex & zook often aren't getting picked up! "zed" is like "said" and "set"
 }
 
 
