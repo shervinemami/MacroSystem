@@ -160,7 +160,7 @@ letterMap = {
     "(video) ": "v",            # My "vix" is like "mix". My "vax" is like "backspace". My "van" is a bit like "then"
     "(wages) ": "w",      # wintel is like hotel, end and enter. week is like queen. "wes" is like "worse"
     "(x-ray) ": "x",
-    "(yeechity) ": "y",     # yeeshim is like shift, yiddish is like trish, yazzam is like home or down, yeast is like left. yellow is like "end left", yoke is like black. # "yang" is like "end". Careful of letter "u", home. "why" is like "white" that is like "why tay"
+    "(yeepoch) ": "y",     # yeeshim is like shift, yiddish is like trish, yazzam is like home or down, yeast is like left. yellow is like "end left", yoke is like black. # "yang" is like "end". Careful of letter "u", home. "why" is like "white" that is like "why tay"
     "(zoobko) ": "z",     # zirconium? zircumference? zosepi? zidacious is like shift, zultani is like up home, zood is like undo and rude, zooki? zyxel is like click, zooch & zener are like insert! zulu, zoolex, zolex, zook and zeakbajived often aren't getting picked up! "zed" is like "said" and "set"
 }
 
