@@ -151,7 +151,7 @@ letterMap = {
     "(miley) ": "m",       # Mosfet is somehow like "plus" and "space"! # Mix is a bit like minus?  # My "mike" is similar to "my"
     "(newish) ": "n",   # noosh is maybe like mosfet. niche is like unix. # nose?  "Nippy" is like "up"
     "(omez) ": "o",     # orange is like end. oryx is like "echo".  My "osh" is like "as". My "omar" is like "home up"
-    "(please) ": "p",     # please is like lazy and xray, pingu is like undo. "pom" is like "upon" and "up home"
+    "(pomoro) ": "p",     # please is like lazy and xray, pingu is like undo. "pom" is like "upon" and "up home"
     "(queen) ": "q",    # "queen" is like "clean"
     "(rolex) ": "r",          # rolex is like krux. "rod" is like "right"
     "(salty) ": "s",     # "sook" is like "up", "size" is like "keys". careful of snake, space,
