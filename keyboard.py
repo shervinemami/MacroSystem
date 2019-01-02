@@ -155,7 +155,7 @@ letterMap = {
     "(queen) ": "q",    # "queen" is like "clean"
     "(rolex) ": "r",          # rolex is like krux. "rod" is like "right"
     "(salty) ": "s",     # "sook" is like "up", "size" is like "keys". careful of snake, space,
-    "(trish) ": "t",        # tricky is like keys # teach is like itchy
+    "(trash) ": "t",        # tricky is like keys # teach is like itchy
     "(unix) ": "u",          # "urge"? # careful of yang
     "(video) ": "v",            # My "vix" is like "mix". My "vax" is like "backspace". My "van" is a bit like "then"
     "(wintel) ": "w",              # wintel is like hotel and end. My "wes" is like "worse"
