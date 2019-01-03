@@ -152,7 +152,7 @@ letterMap = {
     "(nasal) ": "n",   # newish sometimes isn't heard or is like unix. noosh is maybe like mosfet. niche is like unix. # nose?  "Nippy" is like "up"
     "(osez) ": "o",     # omez is like home. orange is like end. oryx is like "echo".  My "osh" is like "as". My "omar" is like "home up"
     "(premier) ": "p",     # please is like lazy and xray, pingu is like undo. "pom" is like "upon" and "up home"
-    "(quelsh) ": "q",    # "queen" is like "clean" and brain
+    "(quench) ": "q",    # quelsh doesn't work. "queen" is like "clean" and brain
     "(remo) ": "r",       # rezone? rolex is like home. "rod" is like "right"
     "(salty) ": "s",     # "sook" is like "up", "size" is like "keys". careful of snake, space,
     "(trish) ": "t",        # tricky is like keys # teach is like itchy
