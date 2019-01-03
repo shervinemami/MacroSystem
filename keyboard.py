@@ -31,6 +31,7 @@ from aenea import (
     CompoundRule,
     AppContext,
 )
+
 import letterMap
 
 from dragonfly.actions.keyboard import keyboard
