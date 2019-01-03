@@ -152,7 +152,7 @@ letterMap = {
     "(nasal) ": "n",   # newish sometimes isn't heard or is like unix. noosh is maybe like mosfet. niche is like unix. # nose?  "Nippy" is like "up"
     "(osez) ": "o",     # omez is like home. orange is like end. oryx is like "echo".  My "osh" is like "as". My "omar" is like "home up"
     "(premier) ": "p",     # please is like lazy and xray, pingu is like undo. "pom" is like "upon" and "up home"
-    "(queen) ": "q",    # "queen" is like "clean"
+    "(quelsh) ": "q",    # "queen" is like "clean" and brain
     "(remo) ": "r",       # rezone? rolex is like home. "rod" is like "right"
     "(salty) ": "s",     # "sook" is like "up", "size" is like "keys". careful of snake, space,
     "(trish) ": "t",        # tricky is like keys # teach is like itchy
@@ -161,7 +161,7 @@ letterMap = {
     "(wages) ": "w",      # wintel is like hotel, end and enter. week is like queen. "wes" is like "worse"
     "(x-ray) ": "x",
     "(yeelax) ": "y",     # yeeshim is like shift, yiddish is like trish, yazzam is like home or down, yeast is like left. yellow is like "end left", yoke is like black. # "yang" is like "end". Careful of letter "u", home. "why" is like "white" that is like "why tay"
-    "(zimeesi) ": "z",     # zoobkoi is a bit like "close window" and "quotes"! zirconium? zircumference? zosepi? zidacious is like shift, zultani is like up home, zood is like undo and rude, zooki? zyxel is like click, zooch & zener are like insert! zulu, zoolex, zolex, zook and zeakbajived often aren't getting picked up! "zed" is like "said" and "set"
+    "(zimeesi) ": "z",   qb  # zoobkoi is a bit like "close window" and "quotes"! zirconium? zircumference? zosepi? zidacious is like shift, zultani is like up home, zood is like undo and rude, zooki? zyxel is like click, zooch & zener are like insert! zulu, zoolex, zolex, zook and zeakbajived often aren't getting picked up! "zed" is like "said" and "set"
 }
 
 
