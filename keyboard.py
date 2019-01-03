@@ -137,7 +137,7 @@ specialCharMap = {
 
 letterMap = {
     "(acid) ": "a",         # alpha is a bit like up. axis is like backspace. "(aim|and) ": "a",		# careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
-    "(burn) ": "b",        #  brain is like queen, brayo is like premier, "brown" is like down. "black" is like "ebike", "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
+    "(bernie) ": "b",        #  brain is like queen, brayo is like premier, "brown" is like down. "black" is like "ebike", "best" sometimes gets picked up as "this" or "guess". "B|the" sometimes gets picked up as "enter"
     "(char) ": "c",
     "(dozen) ": "d",		# "does" is like "geez", "drax" is like "right". "dam" is like down. "dim" is like "ding". "dug" is like dot. "des" is like "this". "desk" is like "verse", "dose", "this".
     "(ebike) ": "e",		# "ebike" is like "end black", "evo" isn't getting picked up! careful of x, see, end, as, up
