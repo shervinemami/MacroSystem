@@ -133,7 +133,7 @@ specialCharMap = {
 #    "super": "win",
 #}
 
-# Careful of any word that sounds similar to up, 8, 1, 2, and Dragon keywords "spell", "click", "select", "correct that", "read that", "close window", "exit dragon"!
+# Careful of any word that sounds similar to up, 8, 1, 2, and Dragon keywords "spell", "click", "select", "correct that", "read that", "close window", "make command", "exit dragon"!
 
 letterMap = {
     "(acid) ": "a",         # alpha is a bit like up. axis is like backspace. "(aim|and) ": "a",		# careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
