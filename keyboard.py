@@ -168,7 +168,8 @@ letterMap = {
 # generate uppercase versions of every letter
 upperLetterMap = {}
 for letter in letterMap:
-    upperLetterMap["case " + letter] = letterMap[letter].upper()
+    upperLetterMap["big " + letter] = letterMap[letter].upper()         #
+    #upperLetterMap["case " + letter] = letterMap[letter].upper()         # My "case" is too much like "plus"
     #upperLetterMap["capital " + letter] = letterMap[letter].upper()     # My "cap" is too much like "up"
     #upperLetterMap["sky " + letter] = letterMap[letter].upper()         # My "sky" is too much like "score" :-(
 letterMap.update(upperLetterMap)
