@@ -32,7 +32,7 @@ from aenea import (
     AppContext,
 )
 
-import letterMap
+from lettermap import letterMap
 
 from dragonfly.actions.keyboard import keyboard
 from dragonfly.actions.typeables import typeables
