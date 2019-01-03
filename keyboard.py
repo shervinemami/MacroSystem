@@ -135,7 +135,7 @@ specialCharMap = {
 #    "super": "win",
 #}
 
-letterMap = <in separate "letterMap.py" file, so it can also be used by the "practice_mappings.py" tool.
+#letterMap = <in separate "letterMap.py" file, so it can also be used by the "practice_mappings.py" tool.
 
 # generate uppercase versions of every letter
 upperLetterMap = {}
