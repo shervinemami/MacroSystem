@@ -170,7 +170,7 @@ upperLetterMap = {}
 for letter in letterMap:
     #upperLetterMap["bam " + letter] = letterMap[letter].upper()         #
     #upperLetterMap["bam " + letter] = letterMap[letter].upper()         #
-    upperLetterMap["bling " + letter] = letterMap[letter].upper()         # My "fig char" fails
+    upperLetterMap["buzz " + letter] = letterMap[letter].upper()         # My "fig char" fails
     #upperLetterMap["fig " + letter] = letterMap[letter].upper()         # My "fig char" fails
     #upperLetterMap["gross " + letter] = letterMap[letter].upper()         # My "gross" is like "quotes"
     #upperLetterMap["bam " + letter] = letterMap[letter].upper()         # My "bam" is like "end"
