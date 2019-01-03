@@ -150,7 +150,7 @@ letterMap = {
     "(lazy) ": "l",	  # lucy? My "lima" is like "clean" and "end". My L sometimes gets picked up as "help". "L" is like Dragon keyword "spell" :-(
     "(miley) ": "m",       # Mosfet is somehow like "plus" and "space"! # Mix is a bit like minus?  # My "mike" is similar to "my"
     "(nasal) ": "n",   # newish sometimes isn't heard or is like unix. noosh is maybe like mosfet. niche is like unix. # nose?  "Nippy" is like "up"
-    "(omez) ": "o",     # orange is like end. oryx is like "echo".  My "osh" is like "as". My "omar" is like "home up"
+    "(osez) ": "o",     # omez is like home. orange is like end. oryx is like "echo".  My "osh" is like "as". My "omar" is like "home up"
     "(premier) ": "p",     # please is like lazy and xray, pingu is like undo. "pom" is like "upon" and "up home"
     "(queen) ": "q",    # "queen" is like "clean"
     "(remo) ": "r",       # rezone? rolex is like home. "rod" is like "right"
