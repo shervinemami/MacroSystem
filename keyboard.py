@@ -129,11 +129,11 @@ windowCharMap = {
     "enter": Key("enter"),
     "tab": Key("tab"),
     "insert": Key("insert"),
-    "1": Key("1"),
-    "2": Key("2"),
-    "3": Key("3"),
-    "4": Key("4"),
-    "5": Key("5"),
+    "1": Text("1"),
+    "2": Text("2"),
+    "3": Text("3"),
+    "4": Text("4"),
+    "5": Text("5"),
 }
 
 
