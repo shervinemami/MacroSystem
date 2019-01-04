@@ -302,7 +302,7 @@ grammarCfg.cmd.map = Item(
         "control": Key("ctrl:down/3"),
         #"hold control": Key("ctrl:down"),
         #"release control": Key("ctrl:up"),
-        "release all": Key("shift:up, ctrl:up, alt:up, win:up,  shift:down, ctrl:down, alt:down, win:down,  shift:up, ctrl:up, alt:up, win:up"),
+        "release all": Key("shift:up, ctrl:up, alt:up, win:up,  shift:down, shift:up, ctrl:down, ctrl:up, alt:down, alt:up, win:down, win:up"),
         #"press key <pressKey>": Key("%(pressKey)s"),
 
         # Closures.
