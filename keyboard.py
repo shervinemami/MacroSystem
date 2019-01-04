@@ -259,7 +259,7 @@ grammarCfg.cmd.map = Item(
         'F eleven': Key('f11'),
         'F twelve': Key('f12'),
 
-        "window": Key("win:down/3"),
+        #"window": Key("win:down/3"),
         #"win key": release + Key("win/3"),
         #"window <windowChars>": Key("win:down") + Text("%(windowChars)s") + Key("win:up"),
         #"window run": Key("win:down/3") + Text("r") + Key("win:up"),
@@ -271,13 +271,13 @@ grammarCfg.cmd.map = Item(
         "window 4": Key("win:down/3") + Text("4") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
         "window 5": Key("win:down/3") + Text("5") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
         "window space": Key("win:down") + Key("space")  + Key("win:up"),
-        #"window up":    Key("win:down") + Key("up")     + Key("win:up"),
-        #"window down":  Key("win:down") + Key("down")   + Key("win:up"),
-        #"window left":  Key("win:down") + Key("left")   + Key("win:up"),
-        #"window right": Key("win:down") + Key("right")  + Key("win:up"),
-        #"window enter": Key("win:down") + Key("enter")  + Key("win:up"),
+        "window up":    Key("win:down") + Key("up")     + Key("win:up"),
+        "window down":  Key("win:down") + Key("down")   + Key("win:up"),
+        "window left":  Key("win:down") + Key("left")   + Key("win:up"),
+        "window right": Key("win:down") + Key("right")  + Key("win:up"),
+        "window enter": Key("win:down") + Key("enter")  + Key("win:up"),
         "window tab":   Key("win:down") + Key("tab")    + Key("win:up"),
-        #"window insert":Key("win:down") + Key("insert") + Key("win:up"),
+        "window insert":Key("win:down") + Key("insert") + Key("win:up"),
 
         "meta [<num>]": Key("alt:down/1") + Text("%(num)d") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		#meta": Key("alt:down/3"),    # Or do I prefer "alter"?
