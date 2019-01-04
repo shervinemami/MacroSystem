@@ -278,7 +278,7 @@ grammarCfg.cmd.map = Item(
 		"meta 5": Key("alt:down/3") + Text("5") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		#"meta 5": Key("alt:down/3") + Text("5") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		#"meta 6": Key("alt:down/3") + Text("6") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
-		#"meta 7": Key("alt:down/3") + Text("7") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		#"meta 7": Key("alt:down/3") + Text("7") +u release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		#"meta 8": Key("alt:down/3") + Text("8") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		"meta 9": Key("alt:down/3") + Text("9") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
         #"hold met": Key("alt:down/3"),
