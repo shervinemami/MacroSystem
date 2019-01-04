@@ -323,7 +323,7 @@ grammarCfg.cmd.map = Item(
         "comma": Key("comma"),
         "dot": Key("dot"),  # cannot be followed by a repeat count
         "full stop": Key("dot"),  # cannot be followed by a repeat count
-        "point <n> [<num>]": Key("dot") + Text("%(n)d") + Text("%(num)d"),  # allow to say "number 1.23"
+        "point <digit> [<digit2>]": Key("dot") + Text("%(digit)d") + Text("%(digit2)d"),  # allow to say "number 1.23"
         "(dash|minus)": Key("hyphen"),
         "underscore": Key("underscore"),
 
@@ -392,6 +392,8 @@ class KeystrokeRule(MappingRule):
     extras = [
         IntegerRef("n", 1, 100),
         IntegerRef("num", 0, 100),
+        IntegerRef("digit", 0, 10),
+        IntegerRef("digit2", 0, 10),
         Dictation("text"),
         #Dictation("text2"),
         Choice("char", specialCharMap),
