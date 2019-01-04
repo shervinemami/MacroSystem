@@ -362,7 +362,7 @@ grammarCfg.cmd.map = Item(
         #'hexadecimal': Text("0x"),
         #'suspend': Key('c-z'),
 		#'undo': Key('c-z'),  # Sounds too much like "end"
-		'geez': Key('c-z'),
+		"(geez|woopsy): Key('c-z'),
 
         #'word <text>': Function(handle_word),
         'number <num>': Text("%(num)d"),
