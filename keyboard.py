@@ -125,7 +125,7 @@ windowCharMap = {
     "up": Key("up"),
     "down": Key("down"),
     "left": Key("left"),
-    "right": Key("right"),)
+    "right": Key("right"),
     "enter": Key("enter"),
     "tab": Key("tab"),
     "insert": Key("insert"),
