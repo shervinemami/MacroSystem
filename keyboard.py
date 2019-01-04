@@ -260,7 +260,7 @@ grammarCfg.cmd.map = Item(
         'F twelve': Key('f12'),
 
         #"win key": release + Key("win/3"),
-        #"window <windowChars>": Key("win:down/3") + Text("%(windowChars)s") + Key("win:up"),
+        "window <windowChars>": Key("win:down") + Text("%(windowChars)s") + Key("win:up"),
         #"window run": Key("win:down/3") + Text("r") + Key("win:up"),
         #"release window": Key("win:up"),
         #"window [<num>]": Key("win:down/3") + Text("%(num)d") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
