@@ -277,6 +277,7 @@ grammarCfg.cmd.map = Item(
         "window enter": Key("win:down") + Key("enter")  + Key("win:up"),
         "window tab":   Key("win:down") + Key("tab")    + Key("win:up"),
         "window insert":Key("win:down") + Key("insert") + Key("win:up"),
+
         "meta [<num>]": Key("alt:down/1") + Text("%(num)d") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		#meta": Key("alt:down/3"),    # Or do I prefer "alter"?
 		"meta 1": Key("alt:down/3") + Text("1") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
