@@ -119,22 +119,22 @@ specialCharMap = {
     # 'underscore | score': Key('underscore'),
 }
 
-# All the keys that can be pressed with the Window key down.
-windowCharMap = {
-    "space": Key("space"),
-    "up": Key("up"),
-    "down": Key("down"),
-    "left": Key("left"),
-    "right": Key("right"),
-    "enter": Key("enter"),
-    "tab": Key("tab"),
-    "insert": Key("insert"),
-    "1": Key("1"),
-    "2": Key("2"),
-    "3": Key("3"),
-    "4": Key("4"),
-    "5": Key("5"),
-}
+## All the keys that can be pressed with the Window key down.
+#windowCharMap = {
+#    "space": Key("space"),
+#    "up": Key("up"),
+#    "down": Key("down"),
+#    "left": Key("left"),
+#    "right": Key("right"),)
+#    "enter": Key("enter"),
+#    "tab": Key("tab"),
+#    "insert": Key("insert"),
+#    "1": Key("1"),
+#    "2": Key("2"),
+#    "3": Key("3"),
+#    "4": Key("4"),
+#    "5": Key("5"),
+#}
 
 
 ## Modifiers for the press-command.
@@ -260,17 +260,17 @@ grammarCfg.cmd.map = Item(
         'F twelve': Key('f12'),
 
         #"win key": release + Key("win/3"),
-        "window <windowChars>": Key("win:down/3") + Text("%(windowChars)s") + Key("win:up"),
+        #"window <windowChars>": Key("win:down/3") + Text("%(windowChars)s") + Key("win:up"),
         #"window run": Key("win:down/3") + Text("r") + Key("win:up"),
         #"release window": Key("win:up"),
-        #"window [<num>]": Key("win:down/3") + Text("%(num)d") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
-        #"window 1": Key("win:down/3") + Text("1") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
-        #"window 2": Key("win:down/3") + Text("2") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
-        #"window 3": Key("win:down/3") + Text("3") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
-        #"window 4": Key("win:down/3") + Text("4") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
-        #"window 5": Key("win:down/3") + Text("5") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
-        #"meta [<num>]": Key("alt:down/3") + Text("%(num)d") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
-		"meta": Key("alt:down/3"),    # Or do I prefer "alter"?
+        "window [<num>]": Key("win:down/3") + Text("%(num)d") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "window 1": Key("win:down/3") + Text("1") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "window 2": Key("win:down/3") + Text("2") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "window 3": Key("win:down/3") + Text("3") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "window 4": Key("win:down/3") + Text("4") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "window 5": Key("win:down/3") + Text("5") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "meta [<num>]": Key("alt:down/3") + Text("%(num)d") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		#meta": Key("alt:down/3"),    # Or do I prefer "alter"?
 		"meta 1": Key("alt:down/3") + Text("1") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		"meta 2": Key("alt:down/3") + Text("2") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		"meta 3": Key("alt:down/3") + Text("3") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
@@ -388,7 +388,7 @@ class KeystrokeRule(MappingRule):
         #Choice("modifier1", modifierMap),
         #Choice("modifier2", modifierMap),
         #Choice("modifierSingle", singleModifierMap),
-        Choice("windowChars", windowCharMap),
+        #Choice("windowChars", windowCharMap),
     ]
     defaults = {
         "n": 1,
