@@ -237,7 +237,7 @@ grammarCfg.cmd.map = Item(
         "(enter) [<n> times]": release + Key("enter:%(n)d"),
         "tab [<n> times]": Key("tab:%(n)d"),
         #"delete this line": Key("home, s-end, del"),  # @IgnorePep8
-        "backspace [<n> times]": release + Key("backspace:%(n)d"),
+        #"backspace [<n> times]": release + Key("backspace:%(n)d"),
         #"application key": release + Key("apps/3"),
         #"paste [that]": Function(paste_command),
         #"copy [that]": Function(copy_command),
