@@ -120,7 +120,7 @@ specialCharMap = {
 }
 
 # All the keys that can be pressed with the Window key down.
-windowCharMap = {  z
+windowCharMap = {
     "space": Key("space"),
     "up": Key("up"),
     "down": Key("down"),
