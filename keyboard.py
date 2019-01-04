@@ -270,7 +270,7 @@ grammarCfg.cmd.map = Item(
         "window 3": Key("win:down/3") + Text("3") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
         "window 4": Key("win:down/3") + Text("4") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
         "window 5": Key("win:down/3") + Text("5") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
-        #"window space": Key("win:down") + Key("space")  + Key("win:up"),
+        "window space": Key("win:down") + Key("space")  + Key("win:up"),
         #"window up":    Key("win:down") + Key("up")     + Key("win:up"),
         #"window down":  Key("win:down") + Key("down")   + Key("win:up"),
         #"window left":  Key("win:down") + Key("left")   + Key("win:up"),
