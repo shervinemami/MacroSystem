@@ -338,9 +338,9 @@ grammarCfg.cmd.map = Item(
         'round bracket':    Key('lparen'),        # round parenthesis
         'greater than': Key('rangle'),
 		#'rangle': Key('rangle'),
-        'close curly brace':   Key('rbrace'),
-        'close square bracket':   Key('rbracket'),
-        'close round bracket':   Key('rparen'),
+        'close curly':   Key('rbrace'),
+        'close square':   Key('rbracket'),
+        'close round':   Key('rparen'),
 
         "escape": Key("escape"),
         "escape 2": Key("escape") + Key("escape"),
