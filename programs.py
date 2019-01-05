@@ -103,10 +103,11 @@ class ProgramsRule(MappingRule):
         "close tab":                    Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, c") + Key("ctrl:up, win:up, alt:up, shift:up"),
 
         # Allow switching to the left menu area of the KDE file input dialogs, even when using applications that aren't Dolphin.
-        "dolphin change to left tab":   Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "dolphin change to left tab":   Key("tab, tab, tab")
+
 
         # My current aenea proxy system isn't allowing to hold down shift or caps lock, so try using Linux AutoKey instead
-        "press caps lock": Key("tab, tab, tab")
+        "press caps lock": Key("ctrl:down/3, win:down/3, alt:down/3, z") + Key("ctrl:up, win:up, alt:up"),
 
         # Konsole shortcuts
         #"search": Key("c-r"),   # Ctrl+R
