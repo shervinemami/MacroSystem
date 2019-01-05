@@ -334,12 +334,12 @@ grammarCfg.cmd.map = Item(
         'less than': Key('langle'),     # angle bracket
 		#'langle': Key('langle:%(n)d'),
         'curly brace':   Key('lbrace'),       # curly brace
-        'square brace':   Key('lbracket'),      # square bracket
+        'square bracket':   Key('lbracket'),      # square bracket
         'round bracket':    Key('lparen'),        # round parenthesis
         'greater than': Key('rangle'),
 		#'rangle': Key('rangle'),
         'close curly brace':   Key('rbrace'),
-        'close square brace':   Key('rbracket'),
+        'close square bracket':   Key('rbracket'),
         'close round bracket':   Key('rparen'),
 
         "escape": Key("escape"),
