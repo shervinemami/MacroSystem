@@ -1,5 +1,5 @@
 # Careful of any word that sounds similar to up, 8, 1, 2,
-# and also Dragon keywords "spell", "click", "select", "correct that", "underline that", "read that", "close window", "make command", "exit dragon"!
+# and also Dragon keywords "spell", "click", "select", "correct that", "underline that", "read that", "close window", "make that", "make command", "exit dragon"!
 
 letterMap = {
     "(acid) ": "a",         # alpha is a bit like up. axis is like backspace. "(aim|and) ": "a",        # careful of 8, @, lace, lack. My "aim" sometimes gets picked up as "and".
