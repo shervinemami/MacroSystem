@@ -148,7 +148,7 @@ def disableKeyboard():
     print "Disabling just the keyboard grammar."
     #action = dragonfly.Mimic("switch to normal mode")
     action = dragonfly.Playback([
-        (["focus", "Dragon"], 1.0),
+        (["focus", "dragon"], 1.0),
         (["Modes"], 0.5),
         (["Command Mode"], 0.0),
         ])
