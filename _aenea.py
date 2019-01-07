@@ -151,6 +151,10 @@ def disableKeyboard():
     dir_reload_blacklist = set(["core"])
     macro_dir = "C:\\NatLink\\NatLink\\MacroSystem"
 
+    # Unload all grammars if natlinkmain is available.
+    if natlinkmain:
+        natlinkmain.unloadEverything()
+
     for name, module in sorted(sys.modules.items()):
         if module and hasattr(module, "__file__"):
             # Some builtin modules only have a name so module is None or
