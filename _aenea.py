@@ -146,7 +146,9 @@ def reload_code():
 
 def disableKeyboard():
     print "Disabling just the keyboard grammar."
+    mimic("acid")
 
+def ZZZ_REMOVE_THIS_LINE():
     # Do not reload anything in these directories or their subdirectories.
     dir_reload_blacklist = set(["core"])
     macro_dir = "C:\\NatLink\\NatLink\\MacroSystem"
