@@ -94,7 +94,7 @@ class EnableRule(dragonfly.CompoundRule):
 
 
 def unload_code():
-    print "Unloading aenea code"
+    print "Unloading all aenea code"
 
     # Do not reload anything in these directories or their subdirectories.
     dir_reload_blacklist = set(["core"])
@@ -121,7 +121,7 @@ def unload_code():
                 not bool(set(path.split(os.path.sep)) & dir_reload_blacklist)
                 and path != topy(os.path.abspath(__file__))):
 
-                print "removing %s from cache" % name
+                print "removing %s from cache (in module %s)" % (name, module)
 
                 # Remove the module from the cache so that it will be reloaded
                 # the next time # that it is imported.  The paths for packages
@@ -129,7 +129,7 @@ def unload_code():
                 del sys.modules[name]
 
 def load_code():
-    print "Loading aenea code"
+    print "Loading all aenea code"
     try:
         # Reload the top-level modules in macro_dir if natlinkmain is available.
         if natlinkmain:
@@ -143,6 +143,35 @@ def reload_code():
     unload_code()
     load_code()
 
+
+def disableKeyboard():
+    print "Disabling just the keyboard grammar."
+    for name, module in sorted(sys.modules.items()):
+        if module and hasattr(module, "__file__"):
+            # Some builtin modules only have a name so module is None or
+            # do not have a __file__ attribute.  We skip these.
+            path = module.__file__
+
+            # Convert .pyc paths to .py paths.
+            path = topy(path)
+
+            # Do not unimport this module!  This will cause major problems!
+            if (path.startswith(macro_dir) and
+                not bool(set(path.split(os.path.sep)) & dir_reload_blacklist)
+                and path != topy(os.path.abspath(__file__))):
+
+                print "removing %s from cache" % name
+
+                # Remove the module from the cache so that it will be reloaded
+                # the next time # that it is imported.  The paths for packages
+                # end with __init__.pyc so this # takes care of them as well.
+                del sys.modules[name]
+
+
+def enableKeyboard():
+    print "Enabling keyboard."
+    load_code()
+
 def shervstest():
     print "Running Shervs Test!"
     from six.moves import xmlrpc_client
@@ -153,10 +182,10 @@ def shervstest():
 
 
 class DisableKeyboard(dragonfly.MappingRule):
-    mapping = {command_table['disable keyboard']: dragonfly.Function(unload_code)}
+    mapping = {command_table['disable keyboard']: dragonfly.Function(disableKeyboard)}
 
 class EnableKeyboard(dragonfly.MappingRule):
-    mapping = {command_table['enable keyboard']: dragonfly.Function(load_code)}
+    mapping = {command_table['enable keyboard']: dragonfly.Function(enableKeyboard)}
 
 class ShervsTest(dragonfly.MappingRule):
     mapping = {command_table['shervs test']: dragonfly.Function(shervstest)}
