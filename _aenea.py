@@ -105,7 +105,7 @@ def unload_code(optional_blacklist = []):
     macro_dir = "C:\\NatLink\\NatLink\\MacroSystem"
 
     # Unload all grammars if natlinkmain is available.
-    if natlinkmain:
+    if natlinkmain and not len(optional_blacklist):
         natlinkmain.unloadEverything()
 
     # Unload all modules in macro_dir except for those in directories on the
