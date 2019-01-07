@@ -146,7 +146,8 @@ def reload_code():
 
 def disableKeyboard():
     print "Disabling just the keyboard grammar."
-    unload_code()
+    # Unload the modules except for all the "core" and "aenea" modules
+    unload_code("aenea")
 
     print "Switching Dragon to Normal mode."
     action = dragonfly.Mimic("switch", "to", "normal", "mode")
