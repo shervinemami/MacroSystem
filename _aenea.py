@@ -146,7 +146,7 @@ def reload_code():
 
 def disableKeyboard():
     print "Disabling just the keyboard grammar."
-    a = dragonfly.Mimic("acid")
+    a = dragonfly.Mimic("switch to normal mode")
     a.execute()
 
 def ZZZ_REMOVE_THIS_LINE():
