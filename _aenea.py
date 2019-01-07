@@ -93,11 +93,11 @@ class EnableRule(dragonfly.CompoundRule):
         aenea.config.enable_proxy()
 
 
-def unload_code():
+def unload_code(optional_blacklist = []):
     print "Unloading all aenea code"
 
     # Do not reload anything in these directories or their subdirectories.
-    dir_reload_blacklist = set(["core"])
+    dir_reload_blacklist = set(["core"], optional_blacklist)
     macro_dir = "C:\\NatLink\\NatLink\\MacroSystem"
 
     # Unload all grammars if natlinkmain is available.
@@ -122,7 +122,6 @@ def unload_code():
                 and path != topy(os.path.abspath(__file__))):
 
                 print "removing %s from cache (in module %s)" % (name, module)
-                print "B", set(path.split(os.path.sep))
 
                 # Remove the module from the cache so that it will be reloaded
                 # the next time # that it is imported.  The paths for packages
