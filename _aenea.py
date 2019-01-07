@@ -158,6 +158,12 @@ def enableKeyboard():
     print "Enabling keyboard."
     load_code()
 
+    print "Switching Dragon to Command mode."
+    action = dragonfly.Mimic("switch", "to", "command", "mode")
+    #action = dragonfly.Playback([(["switch", "to", "command", "mode"], 0.0)])
+    action.execute()
+
+
 def shervstest():
     print "Running Shervs Test!"
     from six.moves import xmlrpc_client
