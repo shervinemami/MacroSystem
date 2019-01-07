@@ -176,7 +176,7 @@ def disableKeyboard():
                 # end with __init__.pyc so this # takes care of them as well.
                 del sys.modules[name]
 
-    print "Switching to Normal mode."
+    print "Switching Dragon to Normal mode."
     action = dragonfly.Mimic("switch", "to", "normal", "mode")
     #action = dragonfly.Playback([(["switch", "to", "normal", "mode"], 0.0)])
     action.execute()
