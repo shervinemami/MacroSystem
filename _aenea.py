@@ -146,13 +146,13 @@ def reload_code():
 
 def disableKeyboard():
     print "Disabling just the keyboard grammar."
-    #action = dragonfly.Mimic("switch to normal mode")
+    action = dragonfly.Mimic("switch", "to", "normal", "mode")
     #action = dragonfly.Playback([
     #    (["focus", "dragon"], 1.0),
     #    (["Modes"], 0.5),
     #    (["Command Mode"], 0.0),
     #    ])
-    action = dragonfly.Playback([(["switch", "to", "normal", "mode"], 0.0)])
+    #action = dragonfly.Playback([(["switch", "to", "normal", "mode"], 0.0)])
     action.execute()
 
 def ZZZ_REMOVE_THIS_LINE():
