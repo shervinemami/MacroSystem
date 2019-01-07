@@ -146,6 +146,11 @@ def reload_code():
 
 def disableKeyboard():
     print "Disabling just the keyboard grammar."
+
+    # Do not reload anything in these directories or their subdirectories.
+    dir_reload_blacklist = set(["core"])
+    macro_dir = "C:\\NatLink\\NatLink\\MacroSystem"
+
     for name, module in sorted(sys.modules.items()):
         if module and hasattr(module, "__file__"):
             # Some builtin modules only have a name so module is None or
