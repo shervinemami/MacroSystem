@@ -97,7 +97,7 @@ def unload_code(optional_blacklist = []):
     print "Unloading all aenea code"
 
     # Do not reload anything in these directories or their subdirectories.
-    dir_reload_blacklist = set(["core"] + optional_blacklist)
+    dir_reload_blacklist = set(list(["core"]) + optional_blacklist)
     macro_dir = "C:\\NatLink\\NatLink\\MacroSystem"
 
     # Unload all grammars if natlinkmain is available.
