@@ -146,8 +146,13 @@ def reload_code():
 
 def disableKeyboard():
     print "Disabling just the keyboard grammar."
-    a = dragonfly.Mimic("switch to normal mode")
-    a.execute()
+    action = dragonfly.Mimic("switch to normal mode")
+    #action = Playback([
+    #    (["focus", "Dragon"], 1.0),
+    #    (["Modes"], 0.5),
+    #    (["Command Mode"], 0.0),
+    #    ])
+    action.execute()
 
 def ZZZ_REMOVE_THIS_LINE():
     # Do not reload anything in these directories or their subdirectories.
