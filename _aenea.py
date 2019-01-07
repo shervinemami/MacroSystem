@@ -97,7 +97,8 @@ def unload_code(optional_blacklist = []):
     print "Unloading all aenea code"
 
     # Do not reload anything in these directories or their subdirectories.
-    dir_reload_blacklist = set(list(["core"]) + optional_blacklist)
+    blacklist_list = list(["core"]) + optional_blacklist
+    dir_reload_blacklist = set(blacklist_list)
     print "Blacklist: ", dir_reload_blacklist
     macro_dir = "C:\\NatLink\\NatLink\\MacroSystem"
 
