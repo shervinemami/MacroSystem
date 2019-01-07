@@ -146,7 +146,8 @@ def reload_code():
 
 def disableKeyboard():
     print "Disabling just the keyboard grammar."
-    mimic("acid")
+    a = Mimic("acid")
+    a.execute()
 
 def ZZZ_REMOVE_THIS_LINE():
     # Do not reload anything in these directories or their subdirectories.
