@@ -189,8 +189,9 @@ def changeToLinux():
     #action.execute()
 
     #"change to Linux":              Key("ctrl:down/3, win:down/3, alt:down/3, l") + Key("ctrl:up, win:up, alt:up"),
-    action = dragonfly.Key("cw-l")
-    action.execute()
+    #action = dragonfly.Key("cw-l")
+    #action.execute()
+    aenea.communications.server.greet_user("Shervo")
 
 
 # Switching OSes, when Windows is in a VM on top of a Linux host:
