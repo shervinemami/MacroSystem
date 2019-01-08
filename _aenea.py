@@ -195,6 +195,11 @@ def changeToLinux():
     #"change to Windows":            Key("ctrl:down/3, win:down/3, alt:down/3, w") + Key("ctrl:up, win:up, alt:up"),
 
 
+# Switching OSes, when Windows is in a VM on top of a Linux host:
+def changeToWindows():
+    print "Changing to Windows!"
+
+
 class DisableKeyboard(dragonfly.MappingRule):
     mapping = {command_table['disable keyboard']: dragonfly.Function(disableKeyboard)}
 
