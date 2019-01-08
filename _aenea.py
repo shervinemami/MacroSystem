@@ -171,12 +171,6 @@ def enableKeyboard():
     action.execute()
 
 
-def changeToLinux():
-    # Switching OSes, when Windows is in a VM on top of a Linux host:
-    "change to Linux":              Key("ctrl:down/3, win:down/3, alt:down/3, l") + Key("ctrl:up, win:up, alt:up"),
-    "change to Windows":            Key("ctrl:down/3, win:down/3, alt:down/3, w") + Key("ctrl:up, win:up, alt:up"),
-
-
 def shervstest():
     print "Running Shervs Test!"
     from six.moves import xmlrpc_client
@@ -184,6 +178,11 @@ def shervstest():
     remote_title = server.GetActiveWindowTitle()
     print "Remote ", remote_title
 
+
+# Switching OSes, when Windows is in a VM on top of a Linux host:
+def changeToLinux():
+    #"change to Linux":              Key("ctrl:down/3, win:down/3, alt:down/3, l") + Key("ctrl:up, win:up, alt:up"),
+    #"change to Windows":            Key("ctrl:down/3, win:down/3, alt:down/3, w") + Key("ctrl:up, win:up, alt:up"),
 
 
 class DisableKeyboard(dragonfly.MappingRule):
@@ -194,6 +193,13 @@ class EnableKeyboard(dragonfly.MappingRule):
 
 class ShervsTest(dragonfly.MappingRule):
     mapping = {command_table['shervs test']: dragonfly.Function(shervstest)}
+
+
+class ChangeToLinux(dragonfly.MappingRule):
+    mapping = {command_table['change to Linux']: dragonfly.Function(changeToLinux)}
+
+class ChangeToWindows(dragonfly.MappingRule):
+    mapping = {command_table['change to Windows']: dragonfly.Function(changeToWindows)}
 
 
 # Note that you do not need to turn mic off and then on after saying this.  This
@@ -229,6 +235,8 @@ grammar.add_rule(ChangeServer())
 grammar.add_rule(DisableKeyboard())
 grammar.add_rule(EnableKeyboard())
 grammar.add_rule(ShervsTest())
+grammar.add_rule(ChangeToLinux())
+grammar.add_rule(ChangeToWindows())
 
 grammar.load()
 
