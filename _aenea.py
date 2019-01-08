@@ -189,7 +189,6 @@ def changeToLinux():
     action.execute()
 
     # Run our aenea plugin script that moves the Windows VM to a minimally visible window in Linux.
-    action.execute()
     aenea.communications.server.change_OS()
 
 
