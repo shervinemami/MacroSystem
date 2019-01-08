@@ -188,8 +188,7 @@ def changeToLinux():
     #action = dragonfly.Playback([(["switch", "to", "command", "mode"], 0.0)])
     action.execute()
 
-    #"change to Linux":              Key("ctrl:down/3, win:down/3, alt:down/3, l") + Key("ctrl:up, win:up, alt:up"),
-    #action = dragonfly.Key("cw-l")
+    # Run our aenea plugin script that moves the Windows VM to a minimally visible window in Linux.
     action.execute()
     aenea.communications.server.change_OS()
 
