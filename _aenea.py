@@ -189,9 +189,7 @@ def changeToLinux():
     #action.execute()
 
     #"change to Linux":              Key("ctrl:down/3, win:down/3, alt:down/3, l") + Key("ctrl:up, win:up, alt:up"),
-    action = dragonfly.Key("ctrl:down, win:down, l")
-    action.execute()
-    action = dragonfly.Key("ctrl:up, win:up")
+    action = dragonfly.Key("cw-l")
     action.execute()
 
     #"change to Windows":            Key("ctrl:down/3, win:down/3, alt:down/3, w") + Key("ctrl:up, win:up, alt:up"),
