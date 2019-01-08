@@ -183,10 +183,10 @@ def shervstest():
 def changeToLinux():
     print "Changing to Linux!"
 
-    #print "Switching Dragon to Command mode."
-    #action = dragonfly.Mimic("switch", "to", "command", "mode")
-    ##action = dragonfly.Playback([(["switch", "to", "command", "mode"], 0.0)])
-    #action.execute()
+    print "Switching Dragon to Command mode."
+    action = dragonfly.Mimic("switch", "to", "command", "mode")
+    #action = dragonfly.Playback([(["switch", "to", "command", "mode"], 0.0)])
+    action.execute()
 
     #"change to Linux":              Key("ctrl:down/3, win:down/3, alt:down/3, l") + Key("ctrl:up, win:up, alt:up"),
     #action = dragonfly.Key("cw-l")
