@@ -190,7 +190,8 @@ def changeToLinux():
 
     #"change to Linux":              Key("ctrl:down/3, win:down/3, alt:down/3, l") + Key("ctrl:up, win:up, alt:up"),
     #action = dragonfly.Key("cw-l")
-    #action.execute()
+    action = dragonfly.Key("a-f")
+    action.execute()
     aenea.communications.server.change_OS()
 
 
