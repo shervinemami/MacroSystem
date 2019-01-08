@@ -91,9 +91,10 @@ class ProgramsRule(MappingRule):
         "change to text":               Key("ctrl:down/3, win:down/3, alt:down/3, t") + Key("ctrl:up, win:up, alt:up"),
         "change to sublime":            Key("ctrl:down/3, win:down/3, alt:down/3, s") + Key("ctrl:up, win:up, alt:up"),
         "change to dolphin":            Key("ctrl:down/3, win:down/3, alt:down/3, d") + Key("ctrl:up, win:up, alt:up"),
+
         # Switching OSes, when Windows is in a VM on top of a Linux host:
-        "change to Linux":              Key("ctrl:down/3, win:down/3, alt:down/3, l") + Key("ctrl:up, win:up, alt:up"),
-        "change to Windows":            Key("ctrl:down/3, win:down/3, alt:down/3, w") + Key("ctrl:up, win:up, alt:up"),
+        #"change to Linux":              Key("ctrl:down/3, win:down/3, alt:down/3, l") + Key("ctrl:up, win:up, alt:up"),
+        #"change to Windows":            Key("ctrl:down/3, win:down/3, alt:down/3, w") + Key("ctrl:up, win:up, alt:up"),
 
         # For some universal operations that vary between applications, run a Linux AutoKey macro to figure out the correct keyboard shortcut.
         "find":                         Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, f") + Key("ctrl:up, win:up, alt:up, shift:up"),
