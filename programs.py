@@ -96,7 +96,7 @@ class ProgramsRule(MappingRule):
         #"change to Linux":              Key("ctrl:down/3, win:down/3, alt:down/3, l") + Key("ctrl:up, win:up, alt:up"),
         #"change to Windows":            Key("ctrl:down/3, win:down/3, alt:down/3, w") + Key("ctrl:up, win:up, alt:up"),
 
-        # For some universal operations that vary between applications, run a Linux AutoKey macro to figure out the correct keyboard shortcut.
+        # For some universal operations whose shortcuts vary between applications, run a Linux AutoKey macro to figure out the correct keyboard shortcut.
         "find":                         Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, f") + Key("ctrl:up, win:up, alt:up, shift:up"),
         "change to left tab":           Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l") + Key("ctrl:up, win:up, alt:up, shift:up"),
         "change to right tab":          Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r") + Key("ctrl:up, win:up, alt:up, shift:up"),
