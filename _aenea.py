@@ -189,12 +189,20 @@ def changeToLinux():
     action.execute()
 
     # Run our aenea plugin script that moves the Windows VM to a minimally visible window in Linux.
-    aenea.communications.server.change_OS()
+    aenea.communications.server.change_OS("Linux")
 
 
 # Switching OSes, when Windows is in a VM on top of a Linux host:
 def changeToWindows():
     print "Changing to Windows!"
+
+    print "Switching Dragon to Normal mode."
+    action = dragonfly.Mimic("switch", "to", "normal", "mode")
+    #action = dragonfly.Playback([(["switch", "to", "normal", "mode"], 0.0)])
+    action.execute()
+
+    # Run our aenea plugin script that moves the Windows VM to fullscreen in Linux.
+    aenea.communications.server.change_OS("Windows")
 
 
 class DisableKeyboard(dragonfly.MappingRule):
