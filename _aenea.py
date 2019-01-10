@@ -174,11 +174,13 @@ def enableKeyboard():
 
 def shervstest():
     print "Running Shervs Test!"
+    action = dragonfly.RunCommand("/home/semami/Custom/showWindowList.sh")
+    action.execute()
     #"show window list":      Key("win:down/999, tab") + Key("win:up"),
     #"show window list":      Key("w-l") + Key("tab") + Key("down"),
     #action = dragonfly.Key("ctrl:down, alt:down") + dragonfly.Key("ctrl:up, alt:up")
-    action = dragonfly.Key("ctrl:down") + dragonfly.Key("o")
-    action.execute()
+    #action = dragonfly.Key("ctrl:down") + dragonfly.Key("o")
+    #action.execute()
     #time.sleep(0.3)
     #action = dragonfly.Key("tab")
     #action.execute()
