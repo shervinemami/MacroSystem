@@ -176,7 +176,8 @@ def shervstest():
     print "Running Shervs Test!"
     #"show window list":      Key("win:down/999, tab") + Key("win:up"),
     #"show window list":      Key("w-l") + Key("tab") + Key("down"),
-    action = dragonfly.Key("ctrl:down, alt:down, o") + dragonfly.Key("ctrl:up, alt:up")
+    #action = dragonfly.Key("ctrl:down, alt:down") + dragonfly.Key("ctrl:up, alt:up")
+    action = dragonfly.Key("ca-o")
     action.execute()
     #time.sleep(0.3)
     #action = dragonfly.Key("tab")
