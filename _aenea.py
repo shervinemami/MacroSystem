@@ -200,6 +200,10 @@ def changeToLinux():
 def changeToWindows():
     print "Changing to Windows!"
 
+    # Make sure the keyboard input doesn't go to the Linux aenea server!
+    action = dragonfly.Mimic("switch", "to", "dragonpad")
+    action.execute()
+
     print "Switching Dragon to Normal mode."
     action = dragonfly.Mimic("switch", "to", "normal", "mode")
     #action = dragonfly.Playback([(["switch", "to", "normal", "mode"], 0.0)])
