@@ -178,16 +178,13 @@ def shervstest():
     #"show window list":      Key("w-l") + Key("tab") + Key("down"),
     action = dragonfly.Key("w-l")
     action.execute()
-    time.sleep(0.3)
-    action = dragonfly.Key("tab")
-    action.execute()
-    time.sleep(0.1)
-    action = dragonfly.Key("down")
-    action.execute()
+    #time.sleep(0.3)
+    #action = dragonfly.Key("tab")
+    #action.execute()
+    #time.sleep(0.1)
+    #action = dragonfly.Key("down")
+    #action.execute()
 
-
-
-    #
     #from six.moves import xmlrpc_client
     #server = xmlrpc_client.ServerProxy("http://127.0.0.1:12400", allow_none=False)
     #remote_title = server.GetActiveWindowTitle()
