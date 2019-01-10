@@ -93,6 +93,7 @@ class ProgramsRule(MappingRule):
         "change to dolphin":            Key("ctrl:down/3, win:down/3, alt:down/3, d") + Key("ctrl:up, win:up, alt:up"),
 
         # Switching OSes, when Windows is in a VM on top of a Linux host:
+        # (These functions have been moved to "_aenea.py")
         #"change to Linux":              Key("ctrl:down/3, win:down/3, alt:down/3, l") + Key("ctrl:up, win:up, alt:up"),
         #"change to Windows":            Key("ctrl:down/3, win:down/3, alt:down/3, w") + Key("ctrl:up, win:up, alt:up"),
 
