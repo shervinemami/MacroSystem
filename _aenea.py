@@ -68,6 +68,7 @@ command_table = [
     'shervs test',
     'change to Linux',
     'change to Windows',
+    'show window list',
     ]
 command_table = aenea.configuration.make_grammar_commands(
     'aenea',
@@ -174,19 +175,6 @@ def enableKeyboard():
 
 def shervstest():
     print "Running Shervs Test!"
-    # Run our aenea plugin script that shows the Linux window list.
-    aenea.communications.server.showWindowList()
-    #"show window list":      Key("win:down/999, tab") + Key("win:up"),
-    #"show window list":      Key("w-l") + Key("tab") + Key("down"),
-    #action = dragonfly.Key("ctrl:down, alt:down") + dragonfly.Key("ctrl:up, alt:up")
-    #action = dragonfly.Key("ctrl:down") + dragonfly.Key("o")
-    #action.execute()
-    #time.sleep(0.3)
-    #action = dragonfly.Key("tab")
-    #action.execute()
-    #time.sleep(0.1)
-    #action = dragonfly.Key("down")
-    #action.execute()
 
     #from six.moves import xmlrpc_client
     #server = xmlrpc_client.ServerProxy("http://127.0.0.1:12400", allow_none=False)
@@ -232,6 +220,26 @@ def changeToWindows():
     action.execute()
 
 
+def showWindowList():
+    print "Showing the Linux window list."
+
+    #"show window list":      Key("win:down/999, tab") + Key("win:up"),
+    #"show window list":      Key("w-l") + Key("tab") + Key("down"),
+    #action = dragonfly.Key("ctrl:down, alt:down") + dragonfly.Key("ctrl:up, alt:up")
+    #action = dragonfly.Key("ctrl:down") + dragonfly.Key("o")
+    #action.execute()
+    #time.sleep(0.3)
+    #action = dragonfly.Key("tab")
+    #action.execute()
+    #time.sleep(0.1)
+    #action = dragonfly.Key("down")
+    #action.execute()
+
+    # Run our aenea plugin script that shows the Linux window list.
+    aenea.communications.server.showWindowList()
+
+
+
 class DisableKeyboard(dragonfly.MappingRule):
     mapping = {command_table['disable keyboard']: dragonfly.Function(disableKeyboard)}
 
@@ -241,12 +249,14 @@ class EnableKeyboard(dragonfly.MappingRule):
 class ShervsTest(dragonfly.MappingRule):
     mapping = {command_table['shervs test']: dragonfly.Function(shervstest)}
 
-
 class ChangeToLinux(dragonfly.MappingRule):
     mapping = {command_table['change to Linux']: dragonfly.Function(changeToLinux)}
 
 class ChangeToWindows(dragonfly.MappingRule):
     mapping = {command_table['change to Windows']: dragonfly.Function(changeToWindows)}
+
+class ShowWindowList(dragonfly.MappingRule):
+    mapping = {command_table['show window list']: dragonfly.Function(showWindowList)}
 
 
 # Note that you do not need to turn mic off and then on after saying this.  This
@@ -284,6 +294,7 @@ grammar.add_rule(EnableKeyboard())
 grammar.add_rule(ShervsTest())
 grammar.add_rule(ChangeToLinux())
 grammar.add_rule(ChangeToWindows())
+grammar.add_rule(ShowWindowList())
 
 grammar.load()
 
