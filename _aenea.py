@@ -181,6 +181,9 @@ def shervstest():
     time.sleep(0.2)
     action = dragonfly.Key("tab")
     action.execute()
+    time.sleep(0.2)
+    action = dragonfly.Key("down")
+    action.execute()
 
 
 
