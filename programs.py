@@ -112,7 +112,6 @@ class ProgramsRule(MappingRule):
 
         # Moved to _aenea.py
         #"window list":      Key("win:down/999, tab") + Key("win:up"),
-        #"window list":      Key("w-l") + Key("tab") + Key("down"),
 
         # Konsole shortcuts
         #"search": Key("c-r"),   # Ctrl+R
