@@ -342,6 +342,7 @@ grammarCfg.cmd.map = Item(
         'close curly':   Key('rbrace'),
         'close square':   Key('rbracket'),
         'close round':   Key('rparen'),
+        'close bracket':  Key('rparen'),    # Only included here because otherwise, it causes "Close Dragon"!
 
         "escape": Key("escape"),
         "escape 2": Key("escape") + Key("escape"),
