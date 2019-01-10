@@ -110,7 +110,7 @@ class ProgramsRule(MappingRule):
         # My current aenea proxy system isn't allowing to hold down shift or caps lock, so try using Linux AutoKey instead
         "press caps lock": Key("ctrl:down/3, win:down/3, alt:down/3, z") + Key("ctrl:up, win:up, alt:up"),
 
-        "show window list":      Key("win:down/5000, tab"),
+        "show window list":      Key("win:down/5000, tab") + Key("win:up"),
 
         # Konsole shortcuts
         #"search": Key("c-r"),   # Ctrl+R
