@@ -281,6 +281,8 @@ grammarCfg.cmd.map = Item(
         "window tab":   Key("win:down") + Key("tab")    + Key("win:up"),
         "window insert": Key("win:down") + Key("insert") + Key("win:up"),
         "window <letters>": Key("win:down") + Text("%(letters)s") + Key("win:up"),
+        # Moved to _aenea.py
+        #"window list":      Key("win:down/999, tab") + Key("win:up"),
 
         "meta [<num>]": Key("alt:down/1") + Text("%(num)d") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		#meta": Key("alt:down/3"),    # Or do I prefer "alter"?
