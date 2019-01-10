@@ -111,6 +111,7 @@ class ProgramsRule(MappingRule):
         "press caps lock": Key("ctrl:down/3, win:down/3, alt:down/3, z") + Key("ctrl:up, win:up, alt:up"),
 
         #"show window list":      Key("win:down/999, tab") + Key("win:up"),
+        "show window list":      Key("win:down, tab"),
 
         # Konsole shortcuts
         #"search": Key("c-r"),   # Ctrl+R
