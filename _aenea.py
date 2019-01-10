@@ -173,10 +173,10 @@ def enableKeyboard():
 
 def shervstest():
     print "Running Shervs Test!"
-    from six.moves import xmlrpc_client
-    server = xmlrpc_client.ServerProxy("http://127.0.0.1:12400", allow_none=False)
-    remote_title = server.GetActiveWindowTitle()
-    print "Remote ", remote_title
+    #from six.moves import xmlrpc_client
+    #server = xmlrpc_client.ServerProxy("http://127.0.0.1:12400", allow_none=False)
+    #remote_title = server.GetActiveWindowTitle()
+    #print "Remote ", remote_title
 
 
 # Switching OSes, when Windows is in a VM on top of a Linux host:
