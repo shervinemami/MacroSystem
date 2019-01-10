@@ -270,6 +270,8 @@ grammarCfg.cmd.map = Item(
         "window 3": Key("win:down/3") + Text("3") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
         "window 4": Key("win:down/3") + Text("4") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
         "window 5": Key("win:down/3") + Text("5") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "window 6": Key("win:down/3") + Text("6") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
+        "window 7": Key("win:down/3") + Text("7") + Key("win:up"),    # Allow to say "window 2" to switch to the 2nd window
         "window space": Key("win:down") + Key("space")  + Key("win:up"),
         "window up":    Key("win:down") + Key("up")     + Key("win:up"),
         "window down":  Key("win:down") + Key("down")   + Key("win:up"),
@@ -287,9 +289,8 @@ grammarCfg.cmd.map = Item(
 		"meta 3": Key("alt:down/3") + Text("3") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		"meta 4": Key("alt:down/3") + Text("4") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		"meta 5": Key("alt:down/3") + Text("5") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
-		#"meta 5": Key("alt:down/3") + Text("5") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
-		#"meta 6": Key("alt:down/3") + Text("6") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
-		#"meta 7": Key("alt:down/3") + Text("7") +u release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		"meta 6": Key("alt:down/3") + Text("6") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
+		"meta 7": Key("alt:down/3") + Text("7") +u release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		#"meta 8": Key("alt:down/3") + Text("8") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
 		"meta 9": Key("alt:down/3") + Text("9") + release,      # Allow to say "meta 2" to hit Alt+2 to switch to the 2nd tab of Firefox, etc
         #"hold met": Key("alt:down/3"),
