@@ -204,10 +204,6 @@ def changeToWindows():
     action = dragonfly.Mimic("start", "dragonpad")
     action.execute()
 
-    # Make sure the DragonPad menu bar isn't selected
-    action = dragonfly.Mimic("escape")
-    action.execute()
-
     print "Switching Dragon to Normal mode."
     action = dragonfly.Mimic("switch", "to", "normal", "mode")
     #action = dragonfly.Playback([(["switch", "to", "normal", "mode"], 0.0)])
@@ -215,6 +211,10 @@ def changeToWindows():
 
     # Run our aenea plugin script that moves the Windows VM to fullscreen in Linux.
     aenea.communications.server.change_OS("Windows")
+
+    # Make sure the DragonPad menu bar isn't selected
+    action = dragonfly.Mimic("escape")
+    action.execute()
 
 
 class DisableKeyboard(dragonfly.MappingRule):
