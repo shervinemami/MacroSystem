@@ -68,7 +68,7 @@ command_table = [
     'shervs test',
     'change to Linux',
     'change to Windows',
-    'show window list',
+    'window list',
     ]
 command_table = aenea.configuration.make_grammar_commands(
     'aenea',
@@ -256,7 +256,7 @@ class ChangeToWindows(dragonfly.MappingRule):
     mapping = {command_table['change to Windows']: dragonfly.Function(changeToWindows)}
 
 class ShowWindowList(dragonfly.MappingRule):
-    mapping = {command_table['show window list']: dragonfly.Function(showWindowList)}
+    mapping = {command_table['window list']: dragonfly.Function(showWindowList)}
 
 
 # Note that you do not need to turn mic off and then on after saying this.  This
