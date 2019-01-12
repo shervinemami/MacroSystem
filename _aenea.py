@@ -192,7 +192,7 @@ def changeToLinux():
     action.execute()
 
     # Make sure all keyboard input gets relayed to the Linux aenea server!
-    action = dragonfly.Mimic("switch", "to", "aenea", "client")
+    action = dragonfly.Mimic("switch", "to", "Aenea", "client")
     action.execute()
 
     # Run our aenea plugin script that moves the Windows VM to a minimally visible window in Linux.
