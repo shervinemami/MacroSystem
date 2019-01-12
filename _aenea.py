@@ -190,6 +190,7 @@ def changeToLinux():
     action = dragonfly.Mimic("switch", "to", "command", "mode")
     #action = dragonfly.Playback([(["switch", "to", "command", "mode"], 0.0)])
     action.execute()
+    time.sleep(0.3)
 
     # Make sure all keyboard input gets relayed to the Linux aenea server!
     action = dragonfly.Mimic("switch", "to", "Aenea", "client")
