@@ -99,10 +99,10 @@ class ProgramsRule(MappingRule):
 
         # For some universal operations whose shortcuts vary between applications, run a Linux AutoKey script that knows the correct keyboard shortcut.
         "find":                         Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, f") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "change to left tab":           Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "change to right tab":          Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "change to previous tab":       Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, p") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "change to next tab":           Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, n") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "change to left tab [<n> times]":           Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l:%(n)d") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "change to right tab [<n> times]":          Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r:%(n)d") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "change to previous tab [<n> times]":       Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, p:%(n)d") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "change to next tab [<n> times]":           Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, n:%(n)d") + Key("ctrl:up, win:up, alt:up, shift:up"),
         #"change to left <n> times":     Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l") + Key("ctrl:up, win:up, alt:up, shift:up"),
         #"change to right <n> times":    Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r") + Key("ctrl:up, win:up, alt:up, shift:up"),
         "close tab":                    Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, c") + Key("ctrl:up, win:up, alt:up, shift:up"),
@@ -121,7 +121,7 @@ class ProgramsRule(MappingRule):
     }
     extras = [
         Dictation("text"),
-        IntegerRef("n", 1, 100),
+        IntegerRef("n", 1, 20),
         Choice('gitcommand', gitcommand),
     ]
     defaults = {
