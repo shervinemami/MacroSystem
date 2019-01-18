@@ -63,15 +63,15 @@ class ProgramsRule(MappingRule):
 
 
         # web browser
-        'browser location': Key('a-d'),
-        'browser refresh': Key('f5'),
-        'browser really refresh': Key('s-f5'),
-        'browser back [<n>]': Key('a-left:%(n)d'),
-        'browser forward [<n>]': Key('a-right:%(n)d'),
-        'browser previous [<n>]': Key('c-pgup:%(n)d'),
-        'browser next [<n>]': Key('c-pgdown:%(n)d'),
-        #'browser new': Key('c-t'),
-        'browser close': Key('c-w'),
+        'browser location':         Key('a-d'),
+        'browser refresh':          Key('f5'),
+        'browser really refresh':   Key('s-f5'),
+        'browser back [<n>]':       Key('a-left:%(n)d'),
+        'browser forward [<n>]':    Key('a-right:%(n)d'),
+        'browser previous [<n>]':   Key('c-pgup:%(n)d'),
+        'browser next [<n>]':       Key('c-pgdown:%(n)d'),
+        #'browser new':             Key('c-t'),
+        'browser close':            Key('c-w'),
 
         ## Xfce-like desktop environment commands
         #'(desk|desktop) left [<n>]': Key('ca-left:%(n)d'),
