@@ -99,8 +99,8 @@ class ProgramsRule(MappingRule):
 
         # For some universal operations whose shortcuts vary between applications, run a Linux AutoKey script that knows the correct keyboard shortcut.
         "find":                         Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, f") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "change to left tab [<n> times]":           Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l/50:%(n)d/50") + Key("ctrl:up, win:up, alt:up, shift:up"),
-        "change to right tab [<n> times]":          Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r/50:%(n)d/50") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "change to left tab [<n> times]":           Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l/90:%(n)d/90") + Key("ctrl:up, win:up, alt:up, shift:up"),
+        "change to right tab [<n> times]":          Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, r/90:%(n)d/90") + Key("ctrl:up, win:up, alt:up, shift:up"),
         "change to previous tab [<n> times]":       Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, p/50:%(n)d/50") + Key("ctrl:up, win:up, alt:up, shift:up"),
         "change to next tab [<n> times]":           Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, n/50:%(n)d/50") + Key("ctrl:up, win:up, alt:up, shift:up"),
         #"change to left <n> times":     Key("ctrl:down/3, win:down/3, alt:down/3, shift:down/3, l") + Key("ctrl:up, win:up, alt:up, shift:up"),
