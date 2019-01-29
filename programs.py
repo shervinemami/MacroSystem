@@ -119,6 +119,7 @@ class ProgramsRule(MappingRule):
 
         "perforce": Text("p4"),
         "SSH remote": Text("ssh -XC $REMOTE"),
+        "profile remote": Text("profile_remote whole"),
     }
     extras = [
         Dictation("text"),
