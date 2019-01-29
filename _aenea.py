@@ -191,13 +191,13 @@ def changeToLinux():
     #action = dragonfly.Playback([(["switch", "to", "Aenea", "client"], 0.0)])
     action = dragonfly.FocusWindow(title="Aenea client")
     action.execute()
-    time.sleep(0.4)
+    time.sleep(0.2)
 
     print "Switching Dragon to Command mode."
     action = dragonfly.Mimic("switch", "to", "command", "mode")
     #action = dragonfly.Playback([(["switch", "to", "command", "mode"], 0.0)])
     action.execute()
-    time.sleep(0.2)
+    time.sleep(0.1)
 
     # Run our aenea plugin script that moves the Windows VM to a minimally visible window in Linux.
     aenea.communications.server.change_OS("Linux")
