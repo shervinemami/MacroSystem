@@ -207,14 +207,6 @@ def changeToLinux():
 def changeToWindows():
     print "Changing to Windows!"
 
-    # Make sure the keyboard input doesn't go to the Linux aenea server!
-    #action = dragonfly.Mimic("start", "dragonpad")
-    #action = dragonfly.BringApp("")
-    #action = dragonfly.Playback([(["alt", "escape"], 0.0)])
-    action = dragonfly.Key("alt") + dragonfly.Key("escape")
-    action.execute()
-    time.sleep(0.4)
-
     print "Switching Dragon to Normal mode."
     action = dragonfly.Mimic("switch", "to", "normal", "mode")
     #action = dragonfly.Playback([(["switch", "to", "normal", "mode"], 0.0)])
@@ -222,6 +214,14 @@ def changeToWindows():
 
     # Run our aenea plugin script that moves the Windows VM to fullscreen in Linux.
     aenea.communications.server.change_OS("Windows")
+
+    # Make sure the keyboard input doesn't go to the Linux aenea server!
+    #action = dragonfly.Mimic("start", "dragonpad")
+    #action = dragonfly.BringApp("")
+    #action = dragonfly.Playback([(["alt", "escape"], 0.0)])
+    action = dragonfly.Key("alt") + dragonfly.Key("escape")
+    action.execute()
+    time.sleep(0.4)
 
     # Make sure the DragonPad menu bar isn't selected
     #action = dragonfly.Mimic("escape")
