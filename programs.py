@@ -119,6 +119,7 @@ class ProgramsRule(MappingRule):
 
         "perforce": Text("p4"),
         "SSH remote": Text("ssh -XC $REMOTE"),
+        "dollar sign remote": Text("$REMOTE"),
         "profile remote": Text("profile_remote whole"),
         "PETT": Text("PETT"),
     }
