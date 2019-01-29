@@ -210,11 +210,11 @@ def changeToWindows():
     print "Switching Dragon to Normal mode."
     action = dragonfly.Mimic("switch", "to", "normal", "mode")
     #action = dragonfly.Playback([(["switch", "to", "normal", "mode"], 0.0)])
-    ###action.execute()
+    action.execute()
 
     # Run our aenea plugin script that moves the Windows VM to fullscreen in Linux.
-    ###aenea.communications.server.change_OS("Windows")
-    time.sleep(0.4)
+    aenea.communications.server.change_OS("Windows")
+    time.sleep(0.1)
 
     # Make sure the keyboard input doesn't go to the Linux aenea server!
     #action = dragonfly.Mimic("start", "dragonpad")
@@ -223,7 +223,7 @@ def changeToWindows():
     #action = dragonfly.Key("alt") + dragonfly.Key("escape")
     action = dragonfly.FocusWindow(title="Firefox")
     action.execute()
-    #time.sleep(0.4)
+    time.sleep(0.2)
 
     # Make sure the DragonPad menu bar isn't selected
     #action = dragonfly.Mimic("escape")
