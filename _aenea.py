@@ -220,8 +220,8 @@ def changeToWindows():
     #action = dragonfly.Mimic("start", "dragonpad")
     #action = dragonfly.BringApp("")
     #action = dragonfly.Playback([(["alt", "escape"], 0.0)])
-    action = dragonfly.Playback([(["alt", "tab"], 0.0)])
     #action = dragonfly.Key("alt") + dragonfly.Key("escape")
+    action = dragonfly.FocusWindow(title="Firefox")
     action.execute()
     #time.sleep(0.4)
 
