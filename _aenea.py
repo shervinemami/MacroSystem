@@ -223,8 +223,8 @@ def changeToWindows():
     aenea.communications.server.change_OS("Windows")
 
     # Make sure the DragonPad menu bar isn't selected
-    action = dragonfly.Mimic("escape")
-    action.execute()
+    #action = dragonfly.Mimic("escape")
+    #action.execute()
 
 
 def showWindowList():
