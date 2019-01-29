@@ -219,8 +219,8 @@ def changeToWindows():
     # Make sure the keyboard input doesn't go to the Linux aenea server!
     #action = dragonfly.Mimic("start", "dragonpad")
     #action = dragonfly.BringApp("")
-    #action = dragonfly.Playback([(["alt", "escape"], 0.0)])
-    action = dragonfly.Key("alt") + dragonfly.Key("escape")
+    action = dragonfly.Playback([(["alt", "escape"], 0.0)])
+    #action = dragonfly.Key("alt") + dragonfly.Key("escape")
     action.execute()
     #time.sleep(0.4)
 
