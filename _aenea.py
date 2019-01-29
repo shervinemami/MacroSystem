@@ -214,6 +214,7 @@ def changeToWindows():
 
     # Run our aenea plugin script that moves the Windows VM to fullscreen in Linux.
     aenea.communications.server.change_OS("Windows")
+    time.sleep(0.4)
 
     # Make sure the keyboard input doesn't go to the Linux aenea server!
     #action = dragonfly.Mimic("start", "dragonpad")
