@@ -121,7 +121,6 @@ class ProgramsRule(MappingRule):
         "SSH remote": Text("ssh -XC $REMOTE"),
         "dollar sign remote": Text("$REMOTE"),
         "profile remote": Text("profile_remote whole"),
-        "PETT": Text("PETT"),
     }
     extras = [
         Dictation("text"),
