@@ -118,6 +118,7 @@ class ProgramsRule(MappingRule):
         #"find": Key("ctrl:down/3, shift:down/3, f") + Key("ctrl:up, shift:up"),   # Ctrl+Shift+F
 
         "perforce": Text("p4"),
+        "SSH remote": Text("ssh -XC $REMOTE"),
     }
     extras = [
         Dictation("text"),
