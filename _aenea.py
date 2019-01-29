@@ -222,7 +222,7 @@ def changeToWindows():
     #action = dragonfly.Playback([(["alt", "escape"], 0.0)])
     action = dragonfly.Key("alt") + dragonfly.Key("escape")
     action.execute()
-    time.sleep(0.4)
+    #time.sleep(0.4)
 
     # Make sure the DragonPad menu bar isn't selected
     #action = dragonfly.Mimic("escape")
