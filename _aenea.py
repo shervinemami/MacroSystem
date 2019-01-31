@@ -191,7 +191,7 @@ def changeToLinux():
     #action = dragonfly.Playback([(["switch", "to", "Aenea", "client"], 0.0)])
     action = dragonfly.FocusWindow(title="Aenea client")
     action.execute()
-    time.sleep(0.2)
+    time.sleep(0.1)
 
     print "Switching Dragon to Command mode."
     action = dragonfly.Mimic("switch", "to", "command", "mode")
@@ -223,7 +223,7 @@ def changeToWindows():
     #action = dragonfly.Key("alt") + dragonfly.Key("escape")
     action = dragonfly.FocusWindow(title="Firefox")
     action.execute()
-    time.sleep(0.2)
+    time.sleep(0.1)
 
     # Make sure the DragonPad menu bar isn't selected
     #action = dragonfly.Mimic("escape")
