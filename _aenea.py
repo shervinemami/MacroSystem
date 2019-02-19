@@ -248,6 +248,11 @@ def showWindowList():
     # Run our aenea plugin script that shows the Linux window list.
     aenea.communications.server.showWindowList()
 
+def showShelfList():
+    print "Showing the Linux shelf list."
+
+    # Run our aenea plugin script that shows the Linux clipboard shelf list.
+    aenea.communications.server.showShelfList()
 
 
 class DisableKeyboard(dragonfly.MappingRule):
@@ -267,6 +272,9 @@ class ChangeToWindows(dragonfly.MappingRule):
 
 class ShowWindowList(dragonfly.MappingRule):
     mapping = {command_table['window list']: dragonfly.Function(showWindowList)}
+
+class ShowShelfList(dragonfly.MappingRule):
+    mapping = {command_table['shelf list']: dragonfly.Function(showShelfList)}
 
 
 # Note that you do not need to turn mic off and then on after saying this.  This
@@ -305,6 +313,7 @@ grammar.add_rule(ShervsTest())
 grammar.add_rule(ChangeToLinux())
 grammar.add_rule(ChangeToWindows())
 grammar.add_rule(ShowWindowList())
+grammar.add_rule(ShowShelfList())
 
 grammar.load()
 
