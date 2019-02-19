@@ -249,6 +249,7 @@ def showWindowList():
     # Run our aenea plugin script that shows the Linux window list.
     aenea.communications.server.showWindowList()
 
+
 def showShelfList():
     print "Showing the Linux shelf list."
 
