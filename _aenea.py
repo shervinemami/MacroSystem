@@ -69,6 +69,7 @@ command_table = [
     'change to Linux',
     'change to Windows',
     'window list',
+    'shelf list',
     ]
 command_table = aenea.configuration.make_grammar_commands(
     'aenea',
