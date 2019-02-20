@@ -294,7 +294,7 @@ class ShelfNumber(dragonfly.MappingRule):
         dragonfly.IntegerRef("n", 0, 99),
     ]
     defaults = {
-        "n": 1,
+        "n": 0,
     }
 
 # Note that you do not need to turn mic off and then on after saying this.  This
