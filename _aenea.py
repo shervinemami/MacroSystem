@@ -254,7 +254,8 @@ def showShelfList():
     print "Showing the Linux shelf list."
 
     # Run our aenea plugin script that shows the Linux clipboard shelf list.
-    aenea.communications.server.showShelfList()
+    # Value -1 means show the graphical list.
+    aenea.communications.server.shelfCommand(-1)
 
 
 class DisableKeyboard(dragonfly.MappingRule):
