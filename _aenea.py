@@ -293,9 +293,9 @@ class ShelfNumber(dragonfly.MappingRule):
     extras = [
         dragonfly.IntegerRef("n", 0, 99),
     ]
-    defaults = {
-        "n": 0,
-    }
+    #defaults = {
+    #    "n": 0,
+    #}
 
 # Note that you do not need to turn mic off and then on after saying this.  This
 # also unloads all modules and packages in the macro directory so that they will
