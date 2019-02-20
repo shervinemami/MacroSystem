@@ -257,6 +257,12 @@ def showShelfList():
     # Value -1 means show the graphical list.
     aenea.communications.server.shelfCommand(-1)
 
+def shelfNumber(val):
+    print "Running shelf number", val
+
+    # Run our aenea plugin script that pastes the shelf item
+    aenea.communications.server.shelfCommand(val)
+
 
 class DisableKeyboard(dragonfly.MappingRule):
     mapping = {command_table['disable keyboard']: dragonfly.Function(disableKeyboard)}
