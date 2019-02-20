@@ -327,6 +327,7 @@ grammar.add_rule(ChangeToLinux())
 grammar.add_rule(ChangeToWindows())
 grammar.add_rule(ShowWindowList())
 grammar.add_rule(ShowShelfList())
+grammar.add_rule(ShelfNumber())
 
 grammar.load()
 
