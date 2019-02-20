@@ -279,6 +279,16 @@ class ShowWindowList(dragonfly.MappingRule):
 class ShowShelfList(dragonfly.MappingRule):
     mapping = {command_table['shelf list']: dragonfly.Function(showShelfList)}
 
+class ShelfNumber(dragonfly.MappingRule):
+    mapping = {
+        "testing": dragonfly.Function(showShelfList)
+        }
+    extras = [
+        IntegerRef("n", 1, 10),
+    ]
+    defaults = {
+        "n": 1,
+    }
 
 # Note that you do not need to turn mic off and then on after saying this.  This
 # also unloads all modules and packages in the macro directory so that they will
