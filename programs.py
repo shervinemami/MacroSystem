@@ -122,6 +122,7 @@ class ProgramsRule(MappingRule):
         "dollar sign remote": Text("$REMOTE"),
         "profile remote": Text("profile_remote whole"),
         "list files": Text("ls -oAFh --color=auto"),
+
     }
     extras = [
         Dictation("text"),
