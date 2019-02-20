@@ -281,7 +281,7 @@ class ShowShelfList(dragonfly.MappingRule):
 
 class ShelfNumber(dragonfly.MappingRule):
     mapping = {
-        "testing": dragonfly.Function(showShelfList)
+        "testing <n>": dragonfly.Function(shelfNumber)
         }
     extras = [
         dragonfly.IntegerRef("n", 1, 10),
