@@ -81,7 +81,7 @@ lastFormatRuleWords = []
 class FormatRule(CompoundRule):
     #spec = ('[upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
     #        'scope-resolve | jumble | dotword | dashword | natword | snakeword | brooding-narrative) [<dictation>] [bomb]')
-    spec = ('( proper | camel | rel-path | abs-path | [uppercase] score | [uppercase] sentence | '
+    spec = ('( camel | rel-path | abs-path | [uppercase] score | [uppercase] sentence | '
             'scope-resolve | [uppercase] jumble | [uppercase] dotword | [uppercase] dashword | [uppercase] natword | snakeword | brooding-narrative) [<dictation>] [bomb]')
     extras = [Dictation(name='dictation')]
 
