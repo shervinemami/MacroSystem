@@ -126,7 +126,7 @@ class ProgramsRule(MappingRule):
     }
     extras = [
         Dictation("text"),
-        IntegerRef("n", 1, 20),
+        IntegerRef("n", 1, 100),
         Choice('gitcommand', gitcommand),
     ]
     defaults = {
