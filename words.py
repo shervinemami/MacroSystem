@@ -42,7 +42,7 @@ lastFormatRuleLength = 0
 lastFormatRuleWords = []
 
 class NopeFormatRule(CompoundRule):
-    spec = ('cancel')
+    spec = ('undo')
 
     def value(self, node):
         global lastFormatRuleLength
@@ -77,6 +77,11 @@ class NopeFormatRule(CompoundRule):
 #        global lastFormatRuleLength
 #        lastFormatRuleLength = len(formatted)
 #        return Text(formatted)
+
+camel
+upper score
+sentence
+natword
 
 class FormatRule(CompoundRule):
     #spec = ('[upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
