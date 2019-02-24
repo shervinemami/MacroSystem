@@ -84,7 +84,7 @@ class FormatRule(CompoundRule):
     # I also moved "upper" into the individual formatting rule, and made <dictation> necessary, so they get randomly picked up less often.
     #spec = ('[upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
     #        'scope-resolve | jumble | dotword | dashword | natword | snakeword | brooding-narrative) [<dictation>] [bomb]')
-    spec = ('( camel | macro | sentence | [uppercase] natword ) <dictation> [bomb]')
+    spec = ('( camel | macro | sentence | [uppercase] jumble | [uppercase] natword ) <dictation> [bomb]')
     extras = [Dictation(name='dictation')]
 
     def value(self, node):
