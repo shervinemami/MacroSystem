@@ -41,14 +41,14 @@ from aenea import (
 lastFormatRuleLength = 0
 lastFormatRuleWords = []
 
-#class NopeFormatRule(CompoundRule):
-#    spec = ('nope')
-#
-#    def value(self, node):
-#        global lastFormatRuleLength
-#        print "erasing previous format of length", lastFormatRuleLength
-#        return Key('backspace:' + str(lastFormatRuleLength))
-#
+class NopeFormatRule(CompoundRule):
+    spec = ('cancel')
+
+    def value(self, node):
+        global lastFormatRuleLength
+        print "erasing previous format of length", lastFormatRuleLength
+        return Key('backspace:' + str(lastFormatRuleLength))
+
 #class ReFormatRule(CompoundRule):
 #    spec = ('that was [upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
 #            'scope-resolve | jumble | dotword | dashword | natword | snakeword | brooding-narrative)')
