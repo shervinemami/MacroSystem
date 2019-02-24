@@ -85,7 +85,7 @@ class FormatRule(CompoundRule):
     #        'scope-resolve | jumble | dotword | dashword | natword | snakeword | brooding-narrative) [<dictation>] [bomb]')
     spec = ('( camel | macro | sentence | [uppercase] natword ) [<dictation>] [bomb]')
     extras = [Dictation(name='dictation')]
-
+helloThereHoweverhello thereHELLO THERE
     def value(self, node):
         words = node.words()
         print "format rule:", words
@@ -101,6 +101,10 @@ class FormatRule(CompoundRule):
         words = [word.split('\\', 1)[0].replace('-', '') for word in words]
         if words[0].lower() in ('uppercase', 'natural'):
             del words[0]
+
+        if 'macro' in words[0]:
+            words[0] = 'score'
+            uppercase = True
 
         bomb = None
         if 'bomb' in words:
