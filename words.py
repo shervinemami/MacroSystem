@@ -42,7 +42,7 @@ lastFormatRuleLength = 0
 lastFormatRuleWords = []
 
 class NopeFormatRule(CompoundRule):
-    spec = ('undo')
+    spec = ('undo that')
 
     def value(self, node):
         global lastFormatRuleLength
