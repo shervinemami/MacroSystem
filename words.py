@@ -42,7 +42,7 @@ lastFormatRuleLength = 0
 lastFormatRuleWords = []
 
 class NopeFormatRule(CompoundRule):
-    spec = ('dammet')
+    spec = ('dammit')
 
     def value(self, node):
         global lastFormatRuleLength
