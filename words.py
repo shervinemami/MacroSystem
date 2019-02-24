@@ -78,10 +78,10 @@ class NopeFormatRule(CompoundRule):
 #        lastFormatRuleLength = len(formatted)
 #        return Text(formatted)
 
-camel
-upper score
-sentence
-natword
+#camel
+#upper score
+#sentence
+#natword
 
 class FormatRule(CompoundRule):
     #spec = ('[upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
