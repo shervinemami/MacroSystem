@@ -90,6 +90,8 @@ helloThereHoweverhello thereHELLO THERE
         words = node.words()
         print "format rule:", words
 
+        #-------------------------------------------
+        # Handle uppercase
         uppercase = words[0] == 'uppercase'
         #lowercase = words[0] != 'natural'
 
@@ -102,10 +104,14 @@ helloThereHoweverhello thereHELLO THERE
         if words[0].lower() in ('uppercase', 'natural'):
             del words[0]
 
+        #-------------------------------------------
+        # Handle 'macro'
         if 'macro' in words[0]:
             words[0] = 'score'
             uppercase = True
 
+        #-------------------------------------------
+        # Handle 'bomb'
         bomb = None
         if 'bomb' in words:
             bomb_point = words.index('bomb')
@@ -113,6 +119,9 @@ helloThereHoweverhello thereHELLO THERE
                 bomb = words[bomb_point+1 : ]
             words = words[ : bomb_point]
 
+
+        #-------------------------------------------
+        # Process all the words
         function = getattr(aenea.format, 'format_%s' % words[0].lower())
         formatted = function(words[1:])
         global lastFormatRuleWords
