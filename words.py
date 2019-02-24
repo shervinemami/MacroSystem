@@ -108,7 +108,7 @@ class FormatRule(CompoundRule):
         #-------------------------------------------
         # Handle 'macro'
         if 'macro' in words[0]:
-            # Get macro to use_underscore_formatting_mode
+            # Get macro to use underscore_formatting_mode
             words[0] = 'score'
             # Convert all the words to UPPERCASE
             words = [word.upper() for word in words]
