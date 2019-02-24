@@ -85,7 +85,7 @@ class FormatRule(CompoundRule):
     #        'scope-resolve | jumble | dotword | dashword | natword | snakeword | brooding-narrative) [<dictation>] [bomb]')
     spec = ('( camel | macro | sentence | [uppercase] natword ) [<dictation>] [bomb]')
     extras = [Dictation(name='dictation')]
-helloThereHoweverhello thereHELLO THERE
+
     def value(self, node):
         words = node.words()
         print "format rule:", words
