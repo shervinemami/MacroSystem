@@ -80,12 +80,13 @@ class NopeFormatRule(CompoundRule):
 
 class FormatRule(CompoundRule):
     # I significantly reduced the formatting options, since I rarely use most of them, and they kept being accidentally picked up.
-    # "macro" means "upper score", such as "HELLO_WORLD"
+    # "macro" means "upper score", such as "HELLO_WORLD".
+    # I also moved "upper" into the individual formatting rule, and made <dictation> necessary, so they get randomly picked up less often.
     #spec = ('[upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
     #        'scope-resolve | jumble | dotword | dashword | natword | snakeword | brooding-narrative) [<dictation>] [bomb]')
-    spec = ('( camel | macro | sentence | [uppercase] natword ) [<dictation>] [bomb]')
+    spec = ('( camel | macro | sentence | [uppercase] natword ) <dictation> [bomb]')
     extras = [Dictation(name='dictation')]
-
+helloTherehello_thereHoweverHello thereHELLO THERE
     def value(self, node):
         words = node.words()
         print "format rule:", words
